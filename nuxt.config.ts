@@ -18,10 +18,13 @@ app: {
   }
 },
 build: {
-  rollupOptions: {
-    external: [
-      'flickity', // Add Flickity here to treat it as an external dependency
-    ]
+  transpile: ['flickity'], // Ensure Flickity is transpiled
+},
+vite: {
+  build: {
+    rollupOptions: {
+      external: ['flickity'], // Exclude Flickity from bundling
+    }
   }
 }
 })
