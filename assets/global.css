@@ -1,0 +1,15 @@
+/* Karl Bager Variabler */
+:root {
+    --kb-black: #000000;
+    --kb-gray-2: #3a3a3a;
+    --kb-gray-3: #777777;
+    --kb-green-1: #204337;
+    --kb-green-2: #377068;
+    --kb-green-3: #609D91;
+    --kb-red-1: #4D2920;
+    --kb-red-2: #78544B;
+    --kb-red-3: #B18D84;
+    
+    --kb-link-color: #36275D;
+    --kb-alert-color: #D13618;
+    }

@@ -1,0 +1,92 @@
+[
+{
+"id": 1,
+"category": 1,
+"title": "eko",
+"subtitle": "DMJX Eksamensopgave",
+"year": 2024,
+"headerImagePath": "media/project1/ekoHeaderImage.png",
+"headerVideo": false,
+"titleColor": "var(--kb-gray-2)",
+"url": "/EkoView"
+},
+{
+"id": 2,
+"category": 3,
+"title": "Sergei Prokofiev",
+"subtitle": "Videoportræt",
+"year": 2022,
+"headerImagePath": "media/project2/project2HeaderImage.png",
+"headerVideoPath": "media/project2/project2HeaderVideo.mp4",
+"headerVideo": true,
+"titleColor": "white",
+"url": "/Project2View"
+},
+{
+"id": 3,
+"category": 2,
+"title": "Hitparlamentet",
+"subtitle": "Koncertfotografi",
+"year": 2022,
+"headerImagePath": "media/project3/project3HeaderImage.jpg",
+"headerVideo": false,
+"titleColor": "white",
+"url": "/Project3View"
+},
+{
+"id": 4,
+"category": 1,
+"title": "Smallegade Rammer",
+"subtitle": "Visuel Identitet",
+"year": 2021,
+"headerImagePath": "media/project4/project4HeaderImage.png",
+"headerVideo": false,
+"titleColor": "var(--kb-gray-2)",
+"url": "/Project4View"
+},
+{
+"id": 5,
+"category": 1,
+"title": "Karusel",
+"subtitle": "Visuel Identitet",
+"year": 2022,
+"headerImagePath": "media/project5/karusel_dynamic_draft.gif",
+"headerVideo": false,
+"titleColor": "white",
+"url": "/Project5View"
+},
+{
+"id": 6,
+"category": 2,
+"title": "Skotland",
+"subtitle": "Arkitekturfotografi",
+"year": 2023,
+"headerImagePath": "media/project6/project6HeaderImage.jpg",
+"headerVideo": false,
+"titleColor": "white",
+"url": "/Project6View"
+},
+{
+"id": 7,
+"category": 2,
+"title": "Søren Rønholt",
+"subtitle": "Retouch",
+"year": 2022,
+"headerImagePath": "media/project7/project7HeaderImage.jpg",
+"headerVideo": false,
+"titleColor": "var(--kb-gray-2)",
+"url": "/Project7View"
+},
+{
+"id": 8,
+"category": 3,
+"title": "Sejlerskolen",
+"subtitle": "Reklamevideo",
+"year": 2021,
+"headerImagePath": "media/project8/project8HeaderImage.jpg",
+"headerVideoPath": "media/project8/project8HeaderVideo.mp4",
+"headerVideo": true,
+"titleColor": "white",
+"url": "/Project8View"
+}
+]
