@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/main.css', '~/assets/global.css', 'flickity/dist/flickity.min.css'],
+  css: ['~/assets/main.css', '~/assets/global.css', '~/assets/flickity/dist/flickity.min.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
