@@ -17,4 +17,11 @@ app: {
     link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/byd1adg.css' }, { rel: 'icon', href: 'media/favicon.png' }]
   }
 },
+build: {
+  rollupOptions: {
+    external: [
+      'flickity', // Add Flickity here to treat it as an external dependency
+    ]
+  }
+}
 })
