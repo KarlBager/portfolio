@@ -26,9 +26,5 @@ vite: {
       external: ['flickity'], // Exclude Flickity from bundling
     }
   }
-},
-buildDir: 'dist',
-generate: {
-  dir: 'dist'
 }
 })
