@@ -85,7 +85,7 @@ export default {
   mounted() {
     if (process.client) {
       // Only import Flickity on the client-side
-      import('flickity').then((Flickity) => {
+      import('@/assets/flickity/dist/flickity.pkgd.min.js').then((Flickity) => {
         // // Initialize Flickity here using the component's ref
         // new Flickity.default(this.$refs.carouselContainer, {
         //   // Flickity options
