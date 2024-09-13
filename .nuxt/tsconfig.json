@@ -123,6 +123,7 @@
     "../.config/nuxt.*",
     "../**/*",
     "../node_modules/@storyblok/nuxt/runtime",
+    "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -131,6 +132,7 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@storyblok/nuxt/runtime/server",
+    "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

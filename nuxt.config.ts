@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [['@nuxtjs/tailwindcss'], ['@storyblok/nuxt', { accessToken: 'RbDFPddzRlJ3FzSDSKY9rgtt' }]],
+  modules: [['@storyblok/nuxt', { accessToken: 'RbDFPddzRlJ3FzSDSKY9rgtt' }], '@nuxtjs/tailwindcss'],
   app: {
   head: {
     bodyAttrs: {
