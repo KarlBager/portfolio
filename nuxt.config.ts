@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/main.css', '~/assets/global.css', '~/assets/flickity/dist/flickity.min.css'],
+  css: ['~/assets/main.css', '~/assets/global.css', '~/assets/flickity/dist/flickity.min.css', '@/assets/css/tailwind.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -9,7 +9,10 @@ export default defineNuxtConfig({
     },
   },
   modules: [['@storyblok/nuxt', { accessToken: 'RbDFPddzRlJ3FzSDSKY9rgtt' }]],
-app: {
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+  ],
+  app: {
   head: {
     bodyAttrs: {
       class: 'fade-in',
