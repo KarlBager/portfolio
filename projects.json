@@ -5,7 +5,7 @@
 "title": "eko",
 "subtitle": "DMJX Eksamensopgave",
 "year": 2024,
-"headerImagePath": "media/project1/ekoHeaderImage.png",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project1/ekoHeaderImage.png",
 "headerVideo": false,
 "titleColor": "var(--kb-gray-2)",
 "url": "/EkoView"
@@ -16,8 +16,8 @@
 "title": "Sergei Prokofiev",
 "subtitle": "Videoportræt",
 "year": 2022,
-"headerImagePath": "media/project2/project2HeaderImage.png",
-"headerVideoPath": "media/project2/project2HeaderVideo.mp4",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project2/project2HeaderImage.png",
+"headerVideoPath": "https://www.portfolio.karlbager.dk/media/project2/project2HeaderVideo.mp4",
 "headerVideo": true,
 "titleColor": "white",
 "url": "/Project2View"
@@ -28,7 +28,7 @@
 "title": "Hitparlamentet",
 "subtitle": "Koncertfotografi",
 "year": 2022,
-"headerImagePath": "media/project3/project3HeaderImage.jpg",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project3/project3HeaderImage.jpg",
 "headerVideo": false,
 "titleColor": "white",
 "url": "/Project3View"
@@ -39,7 +39,7 @@
 "title": "Smallegade Rammer",
 "subtitle": "Visuel Identitet",
 "year": 2021,
-"headerImagePath": "media/project4/project4HeaderImage.png",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project4/project4HeaderImage.png",
 "headerVideo": false,
 "titleColor": "var(--kb-gray-2)",
 "url": "/Project4View"
@@ -50,7 +50,7 @@
 "title": "Karusel",
 "subtitle": "Visuel Identitet",
 "year": 2022,
-"headerImagePath": "media/project5/karusel_dynamic_draft.gif",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project5/karusel_dynamic_draft.gif",
 "headerVideo": false,
 "titleColor": "white",
 "url": "/Project5View"
@@ -61,7 +61,7 @@
 "title": "Skotland",
 "subtitle": "Arkitekturfotografi",
 "year": 2023,
-"headerImagePath": "media/project6/project6HeaderImage.jpg",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project6/project6HeaderImage.jpg",
 "headerVideo": false,
 "titleColor": "white",
 "url": "/Project6View"
@@ -72,7 +72,7 @@
 "title": "Søren Rønholt",
 "subtitle": "Retouch",
 "year": 2022,
-"headerImagePath": "media/project7/project7HeaderImage.jpg",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project7/project7HeaderImage.jpg",
 "headerVideo": false,
 "titleColor": "var(--kb-gray-2)",
 "url": "/Project7View"
@@ -83,8 +83,8 @@
 "title": "Sejlerskolen",
 "subtitle": "Reklamevideo",
 "year": 2021,
-"headerImagePath": "media/project8/project8HeaderImage.jpg",
-"headerVideoPath": "media/project8/project8HeaderVideo.mp4",
+"headerImagePath": "https://www.portfolio.karlbager.dk/media/project8/project8HeaderImage.jpg",
+"headerVideoPath": "https://www.portfolio.karlbager.dk/media/project8/project8HeaderVideo.mp4",
 "headerVideo": true,
 "titleColor": "white",
 "url": "/Project8View"
