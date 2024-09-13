@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prebuild": "mkdir -p dist",
     "prepare": "mkdir -p dist && nuxt prepare",
     "build": "nuxt build",
     "dev": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
