@@ -28,11 +28,11 @@ export default {
   <header class="standard-header">
     <div class="grid grid-cols-24">
 
-      <a class="logo self-center" href="/"><img class="logo self-center" src="@/public/media/logo.svg" /></a>
+      <a class="logo self-center" href="/"><img class="logo self-center" src="https://www.portfolio.karlbager.dk/media/logo.svg" /></a>
 
       <img @click="navOverlayActive = true"
         class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
-        src="@/public/media/single-arrow-forward.svg" />
+        src="https://www.portfolio.karlbager.dk/media/single-arrow-forward.svg" />
       <div class="current-view-heading-hover-box w-fit self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 @click="navOverlayActive = true" class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
         $route.name }}</h3></div>
     </div>
@@ -41,10 +41,10 @@ export default {
 
   <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
     <div class="grid relative grid-cols-24">
-      <a class="logo max-w-[100%] max-h-9 col-span-2 self-center" href="/"><img class="logo max-w-[100%] max-h-9 col-span-2 self-center" src="@/public/media/logo-w.svg" /></a>
+      <a class="logo max-w-[100%] max-h-9 col-span-2 self-center" href="/"><img class="logo max-w-[100%] max-h-9 col-span-2 self-center" src="https://www.portfolio.karlbager.dk/media/logo-w.svg" /></a>
         <img @click="navOverlayActive = true"
         class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
-        src="@/public/media/single-arrow-forward.svg" />
+        src="https://www.portfolio.karlbager.dk/media/single-arrow-forward.svg" />
         <div class="current-view-heading-hover-box w-fit col-start-6 self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 @click="navOverlayActive = true" class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
         $route.name }}</h3></div>
     </div>
