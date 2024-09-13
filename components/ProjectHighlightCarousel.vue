@@ -49,7 +49,7 @@ const filteredProjects = stories.filter(story => {
 
                     <div>
                     <div class="header-portrait-container">
-                      <img src="@/public/media/karl-portrait.jpg" />
+                      <img src="https://www.portfolio.karlbager.dk/media/karl-portrait.jpg" />
                   </div>
                   </div>
 
@@ -111,7 +111,7 @@ const filteredProjects = stories.filter(story => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('@/public/media/pattern.png');
+  background-image: url('https://www.portfolio.karlbager.dk/media/pattern.png');
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -153,7 +153,7 @@ padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('@/public/media/pattern.png');
+  background-image: url('https://www.portfolio.karlbager.dk/media/pattern.png');
   width: 100%;
   height: 100%;
   border-radius: 15px;
