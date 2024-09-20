@@ -83,7 +83,7 @@ document.body.classList.add('loaded');
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://www.portfolio.karlbager.dk/media/pattern.png');
+  background-image: url('https://www.media.karlbager.dk/media/pattern.png');
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -145,23 +145,23 @@ document.body.classList.add('loaded');
 }
 
 .linkedin-link {
-  background-image: url('https://www.portfolio.karlbager.dk/media/linkedin-inv.png');
+  background-image: url('https://www.media.karlbager.dk/media/linkedin-inv.png');
   background-size: cover;
 }
 
 .instagram-link {
-  background-image: url('https://www.portfolio.karlbager.dk/media/instagram-inv.png');
+  background-image: url('https://www.media.karlbager.dk/media/instagram-inv.png');
   background-size: cover;
 }
 
 .linkedin-link:hover {
-  background-image: url('https://www.portfolio.karlbager.dk/media/linkedin.png');
+  background-image: url('https://www.media.karlbager.dk/media/linkedin.png');
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 
 .instagram-link:hover {
-  background-image: url('https://www.portfolio.karlbager.dk/media/instagram.png');
+  background-image: url('https://www.media.karlbager.dk/media/instagram.png');
   background-size: cover;
   transition: background-image 0.3s ease;
 }

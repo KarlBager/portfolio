@@ -4,7 +4,7 @@
 
 <div class="about-container">
   <div class="about-portrait-container">
-    <img class="about-portrait" src="https://www.portfolio.karlbager.dk/media/karl-portrait.jpg" />
+    <img class="about-portrait" src="https://www.media.karlbager.dk/media/karl-portrait.jpg" />
 
     <h3>Karl Emil Bager Jakobsen</h3>
     <p>– det er mig. Velkommen til.<br><br>Jeg er 22 år, bosat i København, og jeg elsker at arbejde med medieproduktion og digitalt design.<br><br>Jeg studerer i øjeblikket Visuel Kommunikation på studieretningen Coded Design ved Danmarks Medie- og Journalisthøjskole.<br><br>Derudover arbejder jeg freelance – primært som produktionsassistent – samt med alt, hvad jeg ellers kan komme i nærheden af.</p>
@@ -13,7 +13,7 @@
 
   
   <div class="about-timeline-container">
-    <img src="https://www.portfolio.karlbager.dk/media/timeline.svg" />
+    <img src="https://www.media.karlbager.dk/media/timeline.svg" />
   </div>
   
 </div>

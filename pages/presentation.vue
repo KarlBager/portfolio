@@ -12,16 +12,16 @@ document.body.classList.add('loaded');
 <template>
   <div class="homepage-container">
 
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_01.jpg" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_02.jpg" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk//media/pres/pres_03.jpg" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_04.jpg" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_01.jpg" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_02.jpg" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk//media/pres/pres_03.jpg" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_04.jpg" />
 
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_05.png" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_06.png" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_07.png" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_08.png" />
-    <img class="pres-slides" src="https://www.portfolio.karlbager.dk/media/pres/pres_09.png" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_05.png" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_06.png" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_07.png" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_08.png" />
+    <img class="pres-slides" src="https://www.media.karlbager.dk/media/pres/pres_09.png" />
 
   </div>
 </template>

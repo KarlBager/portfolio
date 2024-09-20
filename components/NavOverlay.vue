@@ -9,7 +9,7 @@
         <div class="nav-overlay-grid pointer-events-auto z-10 nav-overlay pl-12 py-8 grid grid-cols-5 h-screen
         bg-[color:var(--kb-green-1)]">
           <a href="/" class="logo col-span-4" @click="$emit('close-nav')" to="/"><img
-                    class="logo w-[100%] col-span-4" src="https://www.portfolio.karlbager.dk/media/logo-w.svg" width="125" height="125" /> </a>
+                    class="logo w-[100%] col-span-4" src="https://www.media.karlbager.dk/media/logo-w.svg" width="125" height="125" /> </a>
 
 
             <nav @click="$emit('close-nav')" class="row-start-3 self-center text-white">
@@ -74,18 +74,18 @@ margin: 0.3rem;
 
 
 .linkedin-nav-link{
-    background-image: url('https://www.portfolio.karlbager.dk/media/linkedin-w.png');
+    background-image: url('https://www.media.karlbager.dk/media/linkedin-w.png');
     background-size: cover;
 }
 
 .instagram-nav-link{
-background-image: url('https://www.portfolio.karlbager.dk/media/instagram-w.png');
+background-image: url('https://www.media.karlbager.dk/media/instagram-w.png');
 background-size: cover;
 }
 
 
 .nav-overlay-grid{
-    background-image: url('https://www.portfolio.karlbager.dk/media/pattern.png');
+    background-image: url('https://www.media.karlbager.dk/media/pattern.png');
     background-size: 300%;
     grid-template-rows: 42px minmax(0, 1fr) 2fr 2fr;
 }

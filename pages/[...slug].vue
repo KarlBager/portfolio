@@ -31,7 +31,7 @@ bodyEl.style.transition = 'background-color 0.5s ease'; // Apply transition to b
 // Wait for the transition to finish before changing the background color
 setTimeout(() => {
   bodyEl.style.backgroundColor = "#000000"; // Set background color to black
-  bodyEl.style.backgroundImage = "url('https://www.portfolio.karlbager.dk/media/background-pattern-b.png')"
+  bodyEl.style.backgroundImage = "url('https://www.media.karlbager.dk/media/background-pattern-b.png')"
   bodyEl.style.transition = 'background-image 1s ease';
 }, 100);
 
