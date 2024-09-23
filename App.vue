@@ -38,6 +38,13 @@ export default {
     </div>
   </header>
 
+  <header class="standard-header">
+    
+
+
+    
+  </header>
+
 
   <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
     <div class="grid relative grid-cols-24">
