@@ -3,8 +3,6 @@ import NavOverlay from './components/NavOverlay.vue'
 </script>
 
 
-
-
 <script>
 
 export default {
@@ -25,7 +23,8 @@ export default {
 
 <template>
 
-  <header class="standard-header">
+
+  <!-- <header class="standard-header">
     <div class="grid grid-cols-24">
 
       <a class="logo self-center" href="/"><img class="logo self-center" src="https://www.media.karlbager.dk/media/logo.svg" /></a>
@@ -36,15 +35,25 @@ export default {
       <div class="current-view-heading-hover-box w-fit self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 @click="navOverlayActive = true" class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
         $route.name }}</h3></div>
     </div>
-  </header>
+  </header> -->
 
   <header class="standard-header">
     
-
-
+   <div class="w-full flex"> 
+    <div class="nav-container">
+    <NuxtLink to="/"><img class="logo-new" src="https://www.media.karlbager.dk/media/logo.svg"/></NuxtLink>
+    <div class="navbar navbar-container">
+      <NuxtLink active-class="navbar-item-active" to="/"><div class="navbar navbar-item">Projekter</div></NuxtLink>
+      <NuxtLink active-class="navbar-item-active" to="/AboutView"><div class="navbar navbar-item">Om</div></NuxtLink>
+      <NuxtLink active-class="navbar-item-active" to="/KontaktView"><div class="navbar navbar-item">Kontakt</div></NuxtLink>
+      <!-- <a href="https://www.linkedin.com/in/karl-emil-bager-jakobsen-87485a1a1/"><div class="navbar navbar-itemnavbar-some-item"><div class="social-list-item linkedin-nav-link invert"></div></div></a>
+      <a href="https://www.instagram.com/karlbager"><div class="navbar navbar-item navbar-some-item"><div class="social-list-item instagram-nav-link invert"></div></div></a> -->
+    </div>
+  </div>
+  </div>
     
   </header>
-
+  
 
   <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
     <div class="grid relative grid-cols-24">
@@ -105,6 +114,54 @@ Pladehals Allé 25, 1. tv<br>
 
 
 <style scoped>
+
+.logo-new{
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+.navbar-container{
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+  border-radius: 10px;
+background: #ffffff;
+box-shadow:  6px 6px 16px #d9d9d9,
+             -6px -6px 16px #ffffff;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar-item{
+  display: inline-block;
+  padding: 0 1rem;
+  height: 2rem;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+  text-align: center;
+  align-content: center;
+  transition: all .2s;
+}
+
+
+.navbar-item:hover{
+  font-weight: 600;
+  transition: all .2s;
+}
+
+
+.navbar-item-active div{
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #d9d9d9,
+             -5px -5px 10px #ffffff;
+}
+
+
 
 
 .standard-header{

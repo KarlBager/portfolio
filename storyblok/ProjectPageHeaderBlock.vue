@@ -3,7 +3,7 @@
       <div class="highlight-carousel case-card case-card-container-wide project-page-header">
     <div :style="{ backgroundImage: 'url(' + blok.headerImagePath + ')' }" class="case-card case-card-wide">
         <div class="back-button drop-shadow-lg">
-            <a href="/"><p :style="{ color: blok.titleColor }">Tilbage</p></a>
+            <NuxtLink to="/"><p :style="{ color: blok.titleColor }">Tilbage</p></NuxtLink>
         </div>    
     </div>
 </div>
@@ -90,7 +90,7 @@ defineProps({ blok: Object })
 
 
 .project-page-title-container{
-    color: white;
+    color: black;
     line-height: 1;
     pointer-events: none;
     max-width: 35rem;

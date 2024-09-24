@@ -34,8 +34,12 @@ const props = defineProps({
 <style scoped>
 
 .project-page-paragraph{
-    color: #bbbbbb;
+    color: black;
 }
+/* 
+.project-page-paragraph{
+    color: #bbbbbb;
+} */
 
 .project-page-paragraph-container{
     max-width: 35rem;
