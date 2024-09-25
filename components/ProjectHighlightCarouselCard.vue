@@ -157,7 +157,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
   video.headerVideo{
   display: block;
-  min-width: 94vw;
+  min-width: 100vw;
   }
 
 
