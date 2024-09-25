@@ -33,39 +33,6 @@ const imageClass3 = computed(() => ({
 
 
 
-// let imageId1 = props.blok.Image1.filename.split('/')[7].split('.')[0];
-// let imageId2 = props.blok.Image2.filename.split('/')[7].split('.')[0];
-// let imageId3 = props.blok.Image3.filename.split('/')[7].split('.')[0];
-
-// let imageIds = [imageId1, imageId2, imageId3];
-// let containBooleans = [props.blok.contain1, props.blok.contain2, props.blok.contain3];
-
-
-// function containImage(imageNo) {
-//     let imageDivId = imageIds[imageNo-1];
-
-    
-//         onMounted(() => {
-//             let imageDivEl = document.getElementById(imageDivId);
-//             console.log(imageDivEl);
-
-//             let containBoolean = containBooleans[imageNo-1];
-//             console.log(containBoolean);
-//             if (containBoolean) {
-//                 imageDivEl.classList.add('contain-image');
-//                 console.log('done');
-//             }
-//         });
-    
-// }
-
-
-// onMounted(() => {
-// containImage(1);
-// // containImage(2);
-// // containImage(3);
-// });
-
 </script>
 
 
