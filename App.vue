@@ -303,4 +303,15 @@ footer{
   transition: all 2s ease-in;
 } */
 
+@media only screen and (max-width: 600px) {
+.standard-header{
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-item{
+padding: 0 0.4rem;
+}
+}
+
 </style>

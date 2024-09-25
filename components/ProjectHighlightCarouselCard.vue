@@ -62,7 +62,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo"
           class="pointer-events-none case-card-wide-video-overlay">
           <div class="video">
-            <video class="headerVideo" autoplay muted loop>
+            <video class="headerVideo" playsinline autoplay muted loop>
               <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
             </video>
           </div>
@@ -110,6 +110,8 @@ const carouselCategory = getCategory(props.categoryId, categories);
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -148,15 +150,14 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-container-wide {
   width: 100vw;
   padding: 0 0.5rem;
-  height: 90vh;
+  height: 20rem;
 }
 
 @media only screen and (min-width: 600px) {
 
   video.headerVideo{
   display: block;
-  max-width: 100vw;
-  min-width: 90vw;
+  min-width: 94vw;
   }
 
 
