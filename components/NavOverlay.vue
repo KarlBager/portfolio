@@ -8,7 +8,7 @@
 
         <div class="nav-overlay-grid pointer-events-auto z-10 nav-overlay pl-12 py-8 grid grid-cols-5 h-screen
         bg-[color:var(--kb-green-1)]">
-          <a href="/" class="logo col-span-4" @click="$emit('close-nav')" to="/"><img
+          <a href="/" class="logo col-span-4" @click="$emit('close-nav')" to="/"><NuxtImg
                     class="logo w-[100%] col-span-4" src="https://www.media.karlbager.dk/media/logo-w.svg" width="125" height="125" /> </a>
 
 

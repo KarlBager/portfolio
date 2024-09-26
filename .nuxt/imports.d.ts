@@ -28,5 +28,6 @@ export { withCtx, withDirectives, withKeys, withMemo, withModifiers, withScopeId
 export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerSeoMeta, useServerHeadSafe } from '@unhead/vue';
 export { useAsyncStoryblok } from '../node_modules/@storyblok/nuxt/dist/runtime/composables/useAsyncStoryblok';
 export { useStoryblok, useStoryblokApi, useStoryblokBridge, renderRichText, RichTextSchema } from '@storyblok/vue';
+export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
