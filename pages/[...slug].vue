@@ -3,6 +3,13 @@
 
   <StoryblokComponent v-if="story" :blok="story.content" />
 
+  
+        <div class="backbutton-bottom drop-shadow-lg">
+            <NuxtLink to="/"><p>Tilbage</p></NuxtLink>
+        </div>    
+
+
+
 </template>
 
 <script setup>
@@ -71,10 +78,21 @@ if(process.client){
 
 <style scoped>
 
+.backbutton-bottom{
+  padding: 0rem 5rem 3rem 3rem;
+
+}
+
+
+.backbutton-bottom p{
+  color: black;
+}
+
 .navbar-item-active div{
             background: linear-gradient(145deg, #e6e6e6, #ffffff);
             box-shadow:  5px 5px 10px #d9d9d9,
              -5px -5px 10px #ffffff;
 }
+
 
 </style>

@@ -2,6 +2,7 @@
 import projects from '@/projects.json'
 import categories from '@/categories.json'
 
+
 const props = defineProps({
   projectId: String,
 })
@@ -91,6 +92,13 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
 
 <style>
+
+/* Add this to your component's style section or a global style file */
+.flickity-buttons-light {
+  fill: #ffffff; /* or any light color you prefer */
+}
+
+
  video.headerVideo{
   display: none;
 }
