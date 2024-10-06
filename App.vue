@@ -21,12 +21,6 @@ onMounted(() => {
   
 });
 
-onUnmounted(() => {
-  // Cleanup timeouts when the component is destroyed
-  clearTimeout(loadingTimeout);
-  clearTimeout(cursorTimeout);
-});
-
 const nuxtApp = useNuxtApp();
 
 nuxtApp.hook('page:finish', () => {
@@ -36,6 +30,13 @@ nuxtApp.hook('page:finish', () => {
       document.body.classList.add('loaded');
     }, 500);
 });
+
+onUnmounted(() => {
+  // Cleanup timeouts when the component is destroyed
+  clearTimeout(loadingTimeout);
+  clearTimeout(cursorTimeout);
+});
+
 
 
 </script>

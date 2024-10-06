@@ -33,7 +33,7 @@ definePageMeta({
 
 <script>
 
-document.body.classList.add('loaded');
+// document.body.classList.add('loaded');
 
 
 </script>

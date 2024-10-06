@@ -4,7 +4,7 @@ import ProjectCarousel from '../components/ProjectCarousel.vue'
 
 
 if(process.client){
-document.body.classList.add('loaded');
+// document.body.classList.add('loaded');
 }
 
 </script>
