@@ -1,5 +1,41 @@
 <script setup>
 import NavOverlay from './components/NavOverlay.vue'
+
+import { useNuxtApp } from '#app';
+import { useRouter } from 'vue-router';
+import { onMounted, onUnmounted } from 'vue';
+
+const router = useRouter();
+let loadingTimeout;
+let cursorTimeout;
+
+onMounted(() => {
+  // Show loading cursor when navigation starts
+  router.beforeEach((to, from, next) => {
+    loadingTimeout = setTimeout(() => {
+      document.body.classList.add('cursor-loading');
+    }, 200);  // Optional delay to prevent flickering on fast transitions
+    next();
+  });
+  
+});
+
+onUnmounted(() => {
+  // Cleanup timeouts when the component is destroyed
+  clearTimeout(loadingTimeout);
+  clearTimeout(cursorTimeout);
+});
+
+const nuxtApp = useNuxtApp();
+
+nuxtApp.hook('page:finish', () => {
+    clearTimeout(loadingTimeout);  // Ensure no duplicate timeouts are active
+    cursorTimeout = setTimeout(() => {
+      document.body.classList.remove('cursor-loading');
+    }, 500);
+});
+
+
 </script>
 
 

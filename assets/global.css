@@ -13,3 +13,7 @@
     --kb-link-color: #36275D;
     --kb-alert-color: #D13618;
     }
+
+.cursor-loading{
+    cursor: wait;
+}

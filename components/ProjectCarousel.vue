@@ -128,14 +128,10 @@ margin-bottom: 1rem;
 margin-left: 1rem;
 }
 
-.flickity-page-dots{
-  position: absolute;
-  bottom: 20px;  
-}
 
 
 .carousel-container{
-    padding: 0 0.5rem 3rem;
+    padding: 0 0.5rem 2%;
 }
 
 

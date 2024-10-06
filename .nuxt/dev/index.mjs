@@ -1142,7 +1142,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"stylesheet","href":"https://use.typekit.net/byd1adg.css"},{"rel":"icon","href":"media/favicon.png"}],"style":[],"script":[],"noscript":[],"bodyAttrs":{"class":"fade-in"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"stylesheet","href":"https://use.typekit.net/byd1adg.css"},{"rel":"icon","href":"https://www.media.karlbager.dk/media/favicon.png"}],"style":[],"script":[],"noscript":[],"title":"Karl Bager Portfolio","bodyAttrs":{"class":"fade-in"}};
 
 const appRootId = "__nuxt";
 

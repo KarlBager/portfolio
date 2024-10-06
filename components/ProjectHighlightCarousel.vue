@@ -42,31 +42,20 @@ const filteredProjects = stories.filter(story => {
 
     <div class="carousel highlight-carousel drop-shadow-lg" data-flickity='{"autoPlay": 5000, "wrapAround": true, "arrowShape": "m72.58,60.84l18.84,6.41v20.25S0,52.9,0,52.9v-17.65S91.42.85,91.42.85v20.25s-18.84,6.35-18.84,6.35l-15.26,5.14-34.22,11.49,34.22,11.62,15.26,5.14Z"}'>
         
-      <!-- <div class="carousel-cell">
+      <div class="carousel-cell">
           <div class="case-card case-card-container-wide">
                
                   <div class="bio-case-card case-card">
 
-                    <div>
-                    <div class="header-portrait-container">
-                      <img src="https://www.media.karlbager.dk/media/karl-portrait.jpg" />
-                  </div>
-                  </div>
-
                   <div class="bio-card-typo-container">
-                    <h2>Karl E. Bager</h2>
-                    <h3>– mediemand & digital designer under udvikling</h3>
-                    <NuxtLink to="AboutView"><h4>Læs mere >></h4></NuxtLink>
+                    <h1>Coded, digital designer med fotografisk baggrund</h1>
+                    <NuxtLink to="AboutView"><h4>Læs mere om mig</h4></NuxtLink>
                   </div>
-
-
-                    <div class="case-card-wide-hover-overlay">
-                    </div>
 
                   </div>
    
               </div>
-      </div> -->
+      </div>
       
       
       
@@ -106,29 +95,39 @@ const filteredProjects = stories.filter(story => {
 
 <style>
 
+.highlight-carousel{
+margin: 0rem 0 2rem 0;
+}
+
 .bio-case-card{
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
+  padding: 0rem;
+  display: grid;
   align-items: center;
-  background-image: url('https://www.media.karlbager.dk/media/pattern.png');
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center;
+  align-items: center; */
+  background-image: url('https://www.media.karlbager.dk/media/karl-portrait_ext.jpg');
   width: 100%;
   height: 100%;
   border-radius: 15px;
   background-size: cover;
-  background-position: center;
+  background-position: left 26% top 50%;
   position: relative;
 }
 
 
 .bio-card-typo-container{
 color: white;
-padding: 1rem;
+padding: 0rem;
+grid-column-start: 2;
+grid-column-end: 4;
+
 }
 
-.bio-case-card h2{
-  font-size: 2.3rem;
+.bio-case-card h1{
+  font-size: 1.4rem;
   line-height: 1.0;
+  color: var(--kb-green-1);
 }
 
 .bio-case-card h3{
@@ -140,25 +139,66 @@ padding: 1rem;
 }
 
 .bio-case-card h4{
-  margin-left: 0.4rem;
-  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--kb-red-3);
+  color: var(--kb-green-3);
 }
+
+
+.flickity-prev-next-button.previous{
+  left: 0.2rem;
+}
+
+
+.flickity-prev-next-button.next{
+  right: 0.2rem;
+}
+
+
+.flickity-page-dots{
+  position: relative;
+  bottom: 20px;  
+}
+
+
+
 
 @media only screen and (min-width: 600px) {
 
+
+.highlight-carousel{
+margin: 0rem 0 3rem 0;
+}
+
+
+  .flickity-page-dots{
+  position: relative;
+  bottom: 30px;  
+}
+
+
+.flickity-prev-next-button.previous{
+  left: 3rem;
+}
+
+
+.flickity-prev-next-button.next{
+  right: 3rem;
+}
+
 .bio-case-card{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background-image: url('https://www.media.karlbager.dk/media/pattern.png');
+  background-image: url('https://www.media.karlbager.dk/media/karl-portrait_ext.jpg');
   width: 100%;
   height: 100%;
   border-radius: 15px;
   background-size: cover;
-  background-position: center;
+  background-position: left 30% top 50%;
   position: relative;
 }
 
@@ -166,9 +206,11 @@ padding: 1rem;
 .bio-card-typo-container{
 color: white;
 padding: 1rem;
+grid-column-start: 2;
+grid-column-end: 4;
 }
 
-.bio-case-card h2{
+.bio-case-card h1{
   font-size: 2rem;
   line-height: 1;
 }
@@ -181,18 +223,21 @@ padding: 1rem;
 }
 
 .bio-case-card h4{
-  margin-left: 0.4rem;
+  margin-left: 6rem;
   margin-top: 2rem;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--kb-red-3);
 }
 }
 
 @media only screen and (min-width: 835px) {
-.bio-case-card h2{
-font-size: 6rem;
+  .bio-case-card h4{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
+
 
 
 .bio-card-typo-container{
@@ -201,7 +246,13 @@ padding: 5rem;
 }
 }
 
+@media only screen and (min-width: 1000px) {
 
+  .bio-case-card h1{
+font-size: 2.8rem;
+}
+
+}
 
 .header-portrait-container{
   width: 15rem;
@@ -216,24 +267,6 @@ padding: 5rem;
 }
 
 
-.highlight-carousel{
-margin: 0rem 0 3rem 0;
-}
-
-.flickity-page-dots{
-  position: relative;
-  bottom: 30px;  
-}
-
-
-.flickity-prev-next-button.previous{
-  left: 3rem;
-}
-
-
-.flickity-prev-next-button.next{
-  right: 3rem;
-}
 
 .flickity-button-icon{
 

@@ -15,10 +15,11 @@ export default defineNuxtConfig({
   ],
   app: {
   head: {
+    title: 'Karl Bager Portfolio',
     bodyAttrs: {
       class: 'fade-in',
     },
-    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/byd1adg.css' }, { rel: 'icon', href: 'media/favicon.png' }]
+    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/byd1adg.css' }, { rel: 'icon', href: 'https://www.media.karlbager.dk/media/favicon.png' }]
   }
 },
 })

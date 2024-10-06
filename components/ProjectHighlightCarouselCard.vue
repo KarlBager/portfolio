@@ -107,7 +107,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-typo-container {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  left: 1.5rem;
   line-height: 1;
   color: black;
 }
@@ -141,7 +141,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
 
 .case-card-typo-container h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "roboto", sans-serif;
 }
 
@@ -158,7 +158,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-container-wide {
   width: 100vw;
   padding: 0 0.5rem;
-  height: 20rem;
+  height: 15rem;
 }
 
 @media only screen and (min-width: 600px) {
