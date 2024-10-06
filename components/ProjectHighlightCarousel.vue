@@ -44,7 +44,7 @@ const filteredProjects = stories.filter(story => {
         
       <div class="carousel-cell">
           <div class="case-card case-card-container-wide">
-            <NuxtLink to="AboutView">
+                <NuxtLink to="AboutView">
                   <div class="bio-case-card case-card">
 
                   <div class="bio-card-typo-container">
