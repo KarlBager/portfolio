@@ -48,7 +48,7 @@ const filteredProjects = stories.filter(story => {
                   <div class="bio-case-card case-card">
 
                   <div class="bio-card-typo-container">
-                    <h1>Coded, digital designer med fotografisk baggrund</h1>
+                    <h1>Coded, digital&nbsp;designer&nbsp;med fotografisk&nbsp;baggrund</h1>
                     <NuxtLink to="AboutView"><h4>Læs mere om mig</h4></NuxtLink>
                   </div>
 

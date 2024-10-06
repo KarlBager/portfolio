@@ -15,6 +15,12 @@ const props = defineProps({
 
         <div :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }" class="twoup-image">
         </div>
+        <VueEasyLightbox
+      :visible="visibleRef"
+      :imgs="blok.Image1.filename"
+      :index="indexRef"
+      @hide="onHide"
+    />
     
 
 

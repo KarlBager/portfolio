@@ -11,7 +11,8 @@ export default defineNuxtConfig({
   modules: [
     ['@storyblok/nuxt', { accessToken: 'RbDFPddzRlJ3FzSDSKY9rgtt' }],
     '@nuxtjs/tailwindcss',
-    "@nuxt/image"
+    "@nuxt/image",
+    "nuxt-easy-lightbox"
   ],
   app: {
   head: {
