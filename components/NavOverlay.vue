@@ -45,9 +45,6 @@
 </template>
 
 
-<style scoped>
-</style>
-
 <style>
 
 .nav-overlay-grid{

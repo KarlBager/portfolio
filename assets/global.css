@@ -14,6 +14,8 @@
     --kb-alert-color: #D13618;
     }
 
-.cursor-loading{
+
+/* Loading cursor */
+.cursor-loading * {
     cursor: wait;
 }

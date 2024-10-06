@@ -14,6 +14,7 @@ onMounted(() => {
   router.beforeEach((to, from, next) => {
     loadingTimeout = setTimeout(() => {
       document.body.classList.add('cursor-loading');
+      document.body.classList.remove('loaded');
     }, 200);  // Optional delay to prevent flickering on fast transitions
     next();
   });
@@ -32,6 +33,7 @@ nuxtApp.hook('page:finish', () => {
     clearTimeout(loadingTimeout);  // Ensure no duplicate timeouts are active
     cursorTimeout = setTimeout(() => {
       document.body.classList.remove('cursor-loading');
+      document.body.classList.add('loaded');
     }, 500);
 });
 
