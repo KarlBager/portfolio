@@ -29,8 +29,18 @@ defineProps({ blok: Object })
 .project-page-element-container{
     margin: 3rem auto;
     max-width: 75rem;
+    padding: 0 1rem;
 }
+
+@media only screen and (min-width: 600px) {
+    .project-page-element-container{
+    padding: 0 0rem;
+    }
+}
+
+
 </style>
+
 
 
 <style scoped>
@@ -48,7 +58,12 @@ defineProps({ blok: Object })
 .case-card-container-wide {
   width: 100vw;
   padding: 0 0.5rem;
-  height: 90vh;
+  height: 15rem;
+}
+
+
+.project-page-title-container{
+    padding: 1rem;
 }
 
 
