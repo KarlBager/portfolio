@@ -53,9 +53,11 @@ definePageMeta({
 
 <ProjectCarousel :categoryId="1" />
 
+<ProjectCarousel :categoryId="3" />
+
 <ProjectCarousel :categoryId="2" />
 
-<ProjectCarousel :categoryId="3" />
+
 
 
 </div>

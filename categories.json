@@ -1,7 +1,7 @@
 [
 {
 "categoryId": 1,
-"categoryName": "Grafisk"
+"categoryName": "Grafisk / Konceptuelt"
 },
 {
 "categoryId": 2,
@@ -10,5 +10,9 @@
 {
 "categoryId": 3,
 "categoryName": "Videoproduktion"
+},
+{
+    "categoryId": 4,
+    "categoryName": "UI / UX"
 }
 ]
