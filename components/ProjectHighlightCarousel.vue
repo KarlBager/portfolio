@@ -48,7 +48,7 @@ const filteredProjects = stories.filter(story => {
                   <div class="bio-case-card case-card">
 
                   <div class="bio-card-typo-container">
-                    <h1>Coded, digital&nbsp;designer&nbsp;med fotografisk&nbsp;baggrund</h1>
+                    <h1>Coded&nbsp;Design-studerende med fotografisk&nbsp;baggrund</h1>
                     <h4>Læs mere om mig</h4>
                   </div>
 
@@ -125,7 +125,7 @@ grid-column-end: 4;
 }
 
 .bio-case-card h1{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.0;
   color: var(--kb-green-1);
 }
@@ -211,7 +211,7 @@ grid-column-end: 4;
 }
 
 .bio-case-card h1{
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1;
 }
 
@@ -249,7 +249,7 @@ padding: 5rem;
 @media only screen and (min-width: 1000px) {
 
   .bio-case-card h1{
-font-size: 2.8rem;
+font-size: 2.5rem;
 }
 
 }
