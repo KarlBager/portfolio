@@ -44,16 +44,17 @@ const filteredProjects = stories.filter(story => {
         
       <div class="carousel-cell">
           <div class="case-card case-card-container-wide">
-                <NuxtLink to="AboutView">
+                
                   <div class="bio-case-card case-card">
 
                   <div class="bio-card-typo-container">
+                    <NuxtLink to="AboutView">
                     <h1>Coded&nbsp;Design-studerende med fotografisk&nbsp;baggrund</h1>
-                    <h4>Læs mere om mig</h4>
+                    <h4>Læs mere om mig</h4></NuxtLink>
                   </div>
 
                   </div>
-                </NuxtLink>
+                
               </div>
       </div>
       
