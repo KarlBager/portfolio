@@ -15,15 +15,19 @@ if(process.client){
 
 <template>
 
-  <div class="carousel-cell">
+  <div id="contact-cell" class="carousel-cell">
     <div class="case-card case-card-container-wide">
 
 
       <div class="contact-card case-card">
 
         <div class="contact-card-typo-container">
+          
+          <img id="lille-karl" src="https://media.karlbager.dk/media/lille-karl.jpg">
+          
+          <h2>Her kan jeg kontaktes:</h2>
           <p>
-            <a href="mailto:kontakt@karlbager.dk">kontakt@karlbager.dk</a>
+            <a href="mailto:kb@karlbager.dk">kb@karlbager.dk</a>
             <br>
             <a href="tel:+4529827011">+45 29 82 70 11</a>
           </p>
@@ -77,30 +81,54 @@ if(process.client){
 
 
 
-<style>
+<style scoped>
+#contact-cell{
+  height: 64vh;
+}
+
+.case-card{
+  height: 100%;
+}
+
+#lille-karl{
+  width: 300px;
+  filter: grayscale();
+  border-radius: 15px;
+  margin-bottom: 4px;
+}
+
+
 .contact-card {
   padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://www.media.karlbager.dk/media/pattern.png');
+  /* background-image: url('https://www.media.karlbager.dk/media/lille-karl.jpg'); */
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
 
 
 .contact-card-typo-container {
-  color: white;
+  color: #000000;
   padding: 1rem 0;
+}
+
+.contact-card-typo-container h2{
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 2px;
 }
 
 .contact-card p {
   font-size: 1.2rem;
   line-height: 1.3;
+  text-align: center;
 }
 
 .contact-card h3 {
@@ -129,11 +157,16 @@ if(process.client){
     display: flex;
     align-items: center;
   }
+
+
+  .contact-card-typo-container h2{
+  font-size: 2rem;
+}
 }
 
 .social-link-container {
   margin-top: 1rem;
-  justify-content: left;
+  justify-content: center;
   opacity: 0;
   animation: fade 1s forwards;
 }
@@ -145,23 +178,23 @@ if(process.client){
 }
 
 .linkedin-link {
-  background-image: url('https://www.media.karlbager.dk/media/linkedin-inv.png');
+  background-image: url('https://www.media.karlbager.dk/media/linkedin.png');
   background-size: cover;
 }
 
 .instagram-link {
-  background-image: url('https://www.media.karlbager.dk/media/instagram-inv.png');
+  background-image: url('https://www.media.karlbager.dk/media/instagram.png');
   background-size: cover;
 }
 
 .linkedin-link:hover {
-  background-image: url('https://www.media.karlbager.dk/media/linkedin.png');
+  background-image: url('https://www.media.karlbager.dk/media/linkedin-inv.png');
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 
 .instagram-link:hover {
-  background-image: url('https://www.media.karlbager.dk/media/instagram.png');
+  background-image: url('https://www.media.karlbager.dk/media/instagram-inv.png');
   background-size: cover;
   transition: background-image 0.3s ease;
 }
