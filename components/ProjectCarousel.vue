@@ -30,15 +30,18 @@ const props = defineProps({
 });
 
 
-// console.log(props.categoryId);
+let categoryIdToFilter;
+let filteredProjects;
+let carouselCategory;
 
-// Assuming you have fetched all stories and stored them in an array called 'stories'
+
+if(props.categoryId != 4){
 
 // Define the category ID you want to filter by
-const categoryIdToFilter = props.categoryId;
+categoryIdToFilter = props.categoryId;
 
 // Use the filter method to filter out objects with the specified category ID
-const filteredProjects = stories.filter(story => {
+filteredProjects = stories.filter(story => {
   // Assuming 'category_id' is the key in each story object containing the category ID
   return story.content.category == categoryIdToFilter;
 });
@@ -50,7 +53,18 @@ const filteredProjects = stories.filter(story => {
 function getCategory(categoryId, categories) {
   return categories.filter(category => category.categoryId === categoryId);
 }
-const carouselCategory =  getCategory(props.categoryId, categories);
+carouselCategory =  getCategory(props.categoryId, categories);
+
+} else{
+
+
+// Use the filter method to filter out objects with the specified category ID
+filteredProjects = stories;
+
+carouselCategory = [{categoryName: ''}];
+
+
+}
 
 </script>
 
@@ -61,7 +75,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 <template>
 
 <div class="carousel-container">
-<h4 class="carousel-category-title">{{ carouselCategory[0].categoryName }}</h4>
+<!-- <h4 class="carousel-category-title">{{ carouselCategory[0].categoryName }}</h4> -->
 
 
 <div class="main-carousel drop-shadow-lg" data-flickity='{"cellAlign": "left", "contain": true, "freeScroll": true, "pageDots": false, "prevNextButtons": false}'>
