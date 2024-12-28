@@ -21,9 +21,11 @@ if(process.client){
 
       <div class="contact-card case-card">
 
+        <img id="lille-karl" src="https://media.karlbager.dk/media/karl-portrait.jpg">
+
         <div class="contact-card-typo-container">
           
-          <img id="lille-karl" src="https://media.karlbager.dk/media/lille-karl.jpg">
+
           
           <h2>Her kan jeg kontaktes:</h2>
           <p>
@@ -91,8 +93,7 @@ if(process.client){
 }
 
 #lille-karl{
-  width: 300px;
-  filter: grayscale();
+  width: 16rem;
   border-radius: 15px;
   margin-bottom: 4px;
 }
@@ -112,6 +113,19 @@ if(process.client){
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  gap: 2rem;
+}
+
+
+@media (max-width: 636px) {
+  #lille-karl{
+  display: none;
+}
+
+.contact-card{
+  padding: 0rem;
+}
+
 }
 
 
@@ -121,15 +135,16 @@ if(process.client){
 }
 
 .contact-card-typo-container h2{
-  text-align: center;
-  font-size: 1.7rem;
+  text-align: left;
+  font-size: 1.8rem;
   margin-bottom: 2px;
+  line-height: 1.2;
 }
 
 .contact-card p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.3;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-card h3 {
@@ -167,15 +182,15 @@ if(process.client){
 
 .social-link-container {
   margin-top: 1rem;
-  justify-content: center;
+  justify-content: left;
   opacity: 0;
   animation: fade 1s forwards;
+  gap: 0.6rem;
 }
 
 .social-link {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .linkedin-link {

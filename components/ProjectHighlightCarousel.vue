@@ -49,7 +49,7 @@ const filteredProjects = stories.filter(story => {
 
                   <div class="bio-card-typo-container">
                     <NuxtLink to="AboutView">
-                    <h1>Coded&nbsp;Design- og visuel kommunikationsstuderende</h1>
+                    <h1>Visuel designer med kode som materiale</h1>
                     <h4>Læs mere om mig</h4></NuxtLink>
                   </div>
 
@@ -126,7 +126,7 @@ grid-column-end: 4;
 }
 
 .bio-case-card h1{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.0;
   color: var(--kb-green-1);
 }
@@ -212,7 +212,7 @@ grid-column-end: 4;
 }
 
 .bio-case-card h1{
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
@@ -250,7 +250,7 @@ padding: 5rem;
 @media only screen and (min-width: 1000px) {
 
   .bio-case-card h1{
-font-size: 2.5rem;
+font-size: 3rem;
 }
 
 }
