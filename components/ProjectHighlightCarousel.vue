@@ -34,6 +34,7 @@ const filteredProjects = stories.filter(story => {
 // console.log(filteredProjects);
 
 
+
 </script>
 
 
@@ -48,7 +49,7 @@ const filteredProjects = stories.filter(story => {
                   <div class="bio-case-card case-card">
 
                   <div class="bio-card-typo-container">
-                    <NuxtLink to="AboutView">
+                    <NuxtLink external to="AboutView">
                     <h1>Visuel designer med kode som materiale</h1>
                     <h4>Læs mere om mig</h4></NuxtLink>
                   </div>
@@ -69,29 +70,6 @@ const filteredProjects = stories.filter(story => {
 </template>
 
 
-<script>
-
-
-
-// "arrowShape": "m72.58,60.84l18.84,6.41v20.25S0,52.9,0,52.9v-17.65S91.42.85,91.42.85v20.25s-18.84,6.35-18.84,6.35l-15.26,5.14-34.22,11.49,34.22,11.62,15.26,5.14Z"}
-
-
-// export default {
-//   mounted() {
-//     if (process.client) {
-//       // Only import Flickity on the client-side
-//       import('flickity').then((Flickity) => {
-//         // Initialize Flickity here using the component's ref
-//         new Flickity.default(this.$refs.carouselContainer, {
-//           // Flickity options
-//         });
-//       });
-//     }
-//   }
-// }
-
-
-</script>
 
 
 <style>

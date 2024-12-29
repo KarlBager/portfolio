@@ -60,10 +60,6 @@ onMounted(() => {
 
 <style>
 
-.contain-image{
-background-size: contain !important;
-background-repeat: no-repeat;
-}
 
 .twoup-image{
     margin: 0.2rem;
@@ -71,6 +67,21 @@ background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+@media only screen and (max-width: 600px){
+  .twoup-image{
+    margin: 0.2rem;
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
+}
+}
+
+.contain-image{
+background-size: contain !important;
+background-repeat: no-repeat;
+}
+
 
 </style>
 

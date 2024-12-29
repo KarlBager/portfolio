@@ -110,6 +110,10 @@ const carouselCategory = getCategory(props.categoryId, categories);
   left: 1.5rem;
   line-height: 1;
   color: black;
+  max-width: 60vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
@@ -179,6 +183,10 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-typo-container h2 {
   font-size: 3rem;
   font-family: "roboto", sans-serif;
+}
+
+.case-card-typo-container{
+  max-width: 80vw;
 }
 
 }

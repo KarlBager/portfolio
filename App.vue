@@ -343,9 +343,9 @@ footer{
 } */
 
 @media only screen and (max-width: 600px) {
+
 .standard-header{
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 2rem 0.5rem;
 }
 
 .navbar-item{

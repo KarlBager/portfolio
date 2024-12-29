@@ -27,6 +27,14 @@ const props = defineProps({
 
 <style scoped>
 
+
+.twoup-image{
+    margin: 0.2rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+}
+
 .project-page-twoup-container{
     display: grid;
 }
