@@ -28,7 +28,8 @@ const props = defineProps({
 
 .project-page-video-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    max-height: 30rem;
 }
 
 .video-window{
