@@ -30,8 +30,6 @@ if(process.client){
           <h2>Her kan jeg kontaktes:</h2>
           <p>
             <a href="mailto:kb@karlbager.dk">kb@karlbager.dk</a>
-            <br>
-            <a href="tel:+4529827011">+45 29 82 70 11</a>
           </p>
 
           <div class="flex social-link-container">
