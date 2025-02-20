@@ -3,8 +3,8 @@
       <div class="highlight-carousel case-card case-card-container-wide project-page-header">
     <div :style="{ backgroundImage: 'url(' + blok.headerImagePath + ')' }" class="case-card case-card-wide">
         <div class="back-button drop-shadow-lg">
-            <NuxtLink to="/"><p :style="{ color: blok.titleColor }">Tilbage</p></NuxtLink>
-        </div>    
+            <NuxtLink to="/"><div class="back-button-el">< Tilbage</div></NuxtLink>
+        </div>   
     </div>
 </div>
 
@@ -26,6 +26,25 @@ defineProps({ blok: Object })
 
 
 <style>
+
+.back-button-el{
+  display: inline-block;
+  padding: 0 1rem;
+  color: black;
+  height: 2rem;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+  text-align: center;
+  align-content: center;
+  transition: all .2s;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  0px 2px 10px #0000000a;
+  font-weight: 400;
+}
+
+
+
+
 .project-page-element-container{
     margin: 3rem auto;
     max-width: 75rem;

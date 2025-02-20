@@ -1,0 +1,108 @@
+<script setup>
+
+import ProjectCarouselCard from '../components/ProjectCarouselCard.vue'
+
+import projects from '@/projects.json'
+import categories from '@/categories.json'
+
+let stories = useState(() => ({})); // Initialize state to store all stories
+const storyblokApi = useStoryblokApi(); // Get the Storyblok API instance
+
+  try {
+    const { data } = await storyblokApi.get('cdn/stories', {
+      version: 'draft',
+      per_page: 100 // Set to a value that fits your needs, maximum is 100
+    });
+
+stories = data.stories;
+
+
+  } catch (error) {
+    console.error('Error fetching stories:', error);
+  }
+
+
+
+const props = defineProps({
+    categoryId: Number,
+});
+
+
+let categoryIdToFilter;
+let filteredProjects;
+let carouselCategory;
+
+
+if(props.categoryId != 4){
+
+// Define the category ID you want to filter by
+categoryIdToFilter = props.categoryId;
+
+// Use the filter method to filter out objects with the specified category ID
+filteredProjects = stories.filter(story => {
+  // Assuming 'category_id' is the key in each story object containing the category ID
+  return story.content.category == categoryIdToFilter;
+});
+
+// Now 'filteredStories' contains only the stories with the specified category ID
+// console.log(filteredProjects);
+
+
+function getCategory(categoryId, categories) {
+  return categories.filter(category => category.categoryId === categoryId);
+}
+carouselCategory =  getCategory(props.categoryId, categories);
+
+} else{
+
+
+// Use the filter method to filter out objects with the specified category ID
+filteredProjects = stories;
+
+carouselCategory = [{categoryName: ''}];
+
+}
+
+</script>
+
+
+
+
+
+<template>
+<div class="grid-container">
+<!-- <h4 class="carousel-category-title">{{ carouselCategory[0].categoryName }}</h4> -->
+
+      <div class="grid-cell" v-for="(item, index) in filteredProjects" :key="index">
+        <ProjectGridCard :projectId="filteredProjects[index].content.id" />
+      </div>
+
+</div>
+</template>
+
+
+
+<script>
+
+
+</script>
+
+
+
+<style>
+
+.grid-container{
+  padding: 0 0.5rem 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+.grid-container{
+    padding: 0 3rem 3rem;
+}
+}
+
+</style>

@@ -5,8 +5,6 @@ import categories from '@/categories.json'
 
 const props = defineProps({projectId: String})
 
-
-
 let stories = useState(() => ({})); // Initialize state to store all stories
 const storyblokApi = useStoryblokApi(); // Get the Storyblok API instance
 
@@ -36,11 +34,6 @@ const filteredProjects = stories.filter(story => {
 // console.log(filteredProjects);
 
 
-
-
-
-
-
 function getCategory(categoryId, categories) {
   return categories.filter(category => category.categoryId === categoryId);
 }
@@ -48,27 +41,13 @@ function getCategory(categoryId, categories) {
 
 const carouselCategory =  getCategory(props.categoryId, categories);
 
-
-
-// // Define props object
-// const props = defineProps({
-//   link: String,
-//   imagePath: String,
-//   title: String,
-//   subtitle: String,
-//   year: Number,
-// });
-
-
 </script>
 
 <template>
-<div class="case-card case-card-container">
+<div class="case-card case-card-container drop-shadow-lg">
     <a :href="filteredProjects[0].slug">
     <div :style="{ backgroundImage: 'url(' + filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath + ')' }" class="case-card">
        
-
-
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-wide-video-overlay">
           <div class="video"><video playsinline class="video" autoplay muted loop>
                 <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
@@ -76,11 +55,8 @@ const carouselCategory =  getCategory(props.categoryId, categories);
             </div>
         </div>
        
-
-
         <div class="case-card-hover-overlay">
         </div>
-
     </div>
 
 </a>
@@ -93,22 +69,20 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 <div class="case-card-label-container text-center">
     <h2>{{ filteredProjects[0].content.ProjectPageHeaderBlock[0].title }}</h2>
     <h4>{{ filteredProjects[0].content.ProjectPageHeaderBlock[0].subtitle }}, {{filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4>
-</div>   
-
-
+</div>
 
 </template>
 
 
 
+
 <style scoped>
 
-
-
 .case-card-label-container{
-    margin: 0.3rem 1.5rem 0.3rem 0;
+    margin: 0.3rem 0;
     line-height: 1.1;
-    color: var(--kb-gray-2)
+    color: var(--kb-gray-2);
+    width: 100%;
 }
 
 .case-card-label-container h2{
@@ -139,7 +113,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 }
 
 .video{
-    width: 120%;
+    width: 130%;
 }
 
 
@@ -181,28 +155,21 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 .case-card{
 background-color: var(--kb-green-3);
 width: 100%;
-height: 100%;
+aspect-ratio: 16 / 9;
 border-radius: 15px;
 background-size: cover;
 background-position: center;
-margin-right: 1.5rem;
 position: relative;
 }
 
 
 .case-card-container{
-    width: 20rem;
-    height:10rem;
+    width: 100%;
 }
 
 
 
 @media only screen and (min-width: 600px) {
-
-.case-card-container{
-    width: 25rem;
-    height:15rem;
-}
 
 }
 

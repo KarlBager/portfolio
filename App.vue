@@ -37,8 +37,6 @@ onUnmounted(() => {
   clearTimeout(cursorTimeout);
 });
 
-
-
 </script>
 
 
@@ -108,11 +106,6 @@ export default {
   
   <NuxtPage />
 
-  <!-- <RouterView v-slot="{ Component }">
-    <Transition name="route" mode="out-in">
-      <component :is="Component"></component>
-    </Transition>
-  </RouterView> -->
 
 
 <div class="pointer-events-none h-screen w-screen fixed top-0 left-0">

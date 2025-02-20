@@ -5,7 +5,7 @@
 
   
         <div class="backbutton-bottom drop-shadow-lg">
-            <NuxtLink to="/"><p>Tilbage</p></NuxtLink>
+          <NuxtLink to="/"><div class="back-button-el">< Tilbage</div></NuxtLink>
         </div>    
 
 

@@ -51,7 +51,7 @@ definePageMeta({
 
 <ProjectHighlightCarousel />
 
-<ProjectCarousel :categoryId=1 />
+<ProjectGrid :categoryId=1 />
 
 
 

@@ -74,11 +74,11 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
         <div class="flex case-card-typo-container drop-shadow-lg" :style="'text-decoration-color:' + filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor">
           <div>
-            <h2 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
+            <!-- <h2 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
       filteredProjects[0].content.ProjectPageHeaderBlock[0].title }}</h2>
             <h4 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
       filteredProjects[0].content.ProjectPageHeaderBlock[0].subtitle }},
-              {{ filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4>
+              {{ filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4> -->
             </div>
         </div>
 

@@ -51,7 +51,7 @@ const filteredProjects = stories.filter(story => {
                   <div class="bio-card-typo-container">
                     <NuxtLink external to="AboutView">
                     <h1>Visuel designer med kode som materiale</h1>
-                    <h4>Læs mere om mig</h4></NuxtLink>
+                    <h4>Hvem er jeg?  ></h4></NuxtLink>
                   </div>
 
                   </div>
@@ -139,6 +139,24 @@ grid-column-end: 4;
 .flickity-page-dots{
   position: relative;
   bottom: 20px;  
+  mix-blend-mode: difference;
+}
+
+
+.flickity-page-dot.is-selected{
+  background: rgba(255,255,255, 100%) !important;
+}
+
+.flickity-page-dot{
+  background: rgba(255,255,255, 30%) !important;
+}
+
+.flickity-button-icon{
+  fill: white !important;
+}
+
+.flickity-button{
+  mix-blend-mode: difference;
 }
 
 
