@@ -98,7 +98,6 @@ const carouselCategory = getCategory(props.categoryId, categories);
   fill: #ffffff; /* or any light color you prefer */
 }
 
-
  video.headerVideo{
   display: none;
 }
@@ -162,7 +161,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-container-wide {
   width: 100vw;
   padding: 0 0.5rem;
-  height: 15rem;
+  aspect-ratio: 16 / 9;
 }
 
 @media only screen and (min-width: 600px) {
@@ -176,7 +175,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 .case-card-container-wide {
   width: 100vw;
   padding: 0 3rem;
-  height: 25rem;
+  aspect-ratio: 16 / 6;
 }
 
 
@@ -189,6 +188,12 @@ const carouselCategory = getCategory(props.categoryId, categories);
   max-width: 80vw;
 }
 
+}
+
+@media only screen and (min-width: 1080px) {
+  .case-card-container-wide{
+  aspect-ratio: 16 / 4;
+  }
 }
 
 

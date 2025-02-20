@@ -92,16 +92,23 @@ carouselCategory = [{categoryName: ''}];
 <style>
 
 .grid-container{
-  padding: 0 0.5rem 2%;
+  padding: 0 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-container{
+  padding: 0 3rem 3rem;
   gap: 3rem;
+  }
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1080px) {
 .grid-container{
-    padding: 0 3rem 3rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 }
 

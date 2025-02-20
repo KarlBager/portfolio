@@ -87,11 +87,24 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 
 .case-card-label-container h2{
     font-weight:600;
+    font-size: 1.0rem;
+}
+
+
+.case-card-label-container h4{
+    font-size: 0.6rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+.case-card-label-container h2{
+    font-weight:600;
     font-size: 1.1rem;
 }
 
 .case-card-label-container h4{
     font-size: 0.7rem;
+}
 }
 
 

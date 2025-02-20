@@ -1,9 +1,6 @@
 <script setup>
 import ProjectHighlightCarouselCard from './ProjectHighlightCarouselCard.vue'
 
-// import Flickity from 'flickity';
-// import 'flickity/dist/flickity.min.css';
-
 
 let stories = useState(() => ({})); // Initialize state to store all stories
 const storyblokApi = useStoryblokApi(); // Get the Storyblok API instance

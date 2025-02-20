@@ -7,18 +7,29 @@ import { onMounted } from 'vue';
 
 // Function to load Flickity CSS and JS
 const loadFlickity = () => {
-  // // Load Flickity CSS if not already loaded
-  // if (!document.querySelector('link[href="/flickity/dist/flickity.css"]')) {
-  //   const link = document.createElement('link');
-  //   link.rel = 'stylesheet';
-  //   link.href = '/flickity/dist/flickity.css'; // Static path to CSS
-  //   document.head.appendChild(link);
-  // }
 
   // Load Flickity JS
   const script = document.createElement('script');
   script.src = '/flickity/dist/flickity.pkgd.min.js'; // Static path to JS
+  script.id = 'flickity-script';
   document.body.appendChild(script);
+};
+
+const destroyFlickity = () => {
+  const oldScript = document.querySelector('#flickity-script');
+  oldScript.remove();
+};
+
+
+const reloadFlickity = () => {
+  const oldScript = document.querySelector('#flickity-script');
+  oldScript.remove();
+
+// Load Flickity JS
+const script = document.createElement('script');
+script.src = '/flickity/dist/flickity.pkgd.min.js'; // Static path to JS
+script.id = 'flickity-script';
+document.body.appendChild(script);
 };
 
 // Function to handle route changes
@@ -32,7 +43,6 @@ const handleRouteChange = () => {
 onMounted(() => {
   loadFlickity();
 });
-
 
 
 
@@ -50,6 +60,7 @@ definePageMeta({
 <div class="homepage-container">
 
 <ProjectHighlightCarousel />
+
 
 <ProjectGrid :categoryId=1 />
 

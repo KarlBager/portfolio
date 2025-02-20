@@ -74,28 +74,10 @@ defineProps({ blok: Object })
   position: relative;
 }
 
-.case-card-container-wide {
-  width: 100vw;
-  padding: 0 0.5rem;
-  height: 15rem;
-}
-
-
 .project-page-title-container{
     padding: 1rem;
 }
 
-
-
-@media only screen and (min-width: 600px) {
-
-.case-card-container-wide {
-  width: 100vw;
-  padding: 0 3rem;
-  height: 25rem;
-}
-
-}
 
 .highlight-carousel{
     margin-bottom: 2rem;
@@ -141,10 +123,27 @@ defineProps({ blok: Object })
 
 
 @media only screen and (min-width: 600px) {
+
     .project-page-title-container h2{
-    font-size: 5rem;
-}
+        font-size: 5rem;
+    }
+
+    .case-card-container-wide {
+    width: 100vw;
+    aspect-ratio: 16 / 6;
+    }
 
 }
+
+@media only screen and (min-width: 1080px) {
+  .case-card-container-wide{
+  aspect-ratio: 16 / 4;
+  }
+}
+
+
+
+
+
 
 </style>
