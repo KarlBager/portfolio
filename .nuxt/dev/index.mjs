@@ -106,7 +106,7 @@ const _inlineRuntimeConfig = {
   },
   "public": {
     "storyblok": {
-      "accessToken": "",
+      "accessToken": "RbDFPddzRlJ3FzSDSKY9rgtt",
       "enableSudoMode": false,
       "usePlugin": true,
       "bridge": true,
