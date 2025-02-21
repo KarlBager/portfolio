@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    ['@storyblok/nuxt', { accessToken: 'RbDFPddzRlJ3FzSDSKY9rgtt' }],
+    ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }],
     '@nuxtjs/tailwindcss',
     "@nuxt/image",
     "nuxt-easy-lightbox"
@@ -21,6 +21,10 @@ export default defineNuxtConfig({
   app: {
   head: {
     title: 'Karl Bager Portfolio',
+    meta: [{
+      name: 'google-site-verification',
+      content: 'EJqIOGhmaUOcCTX8CR2l_HbAc-n74lEg9kmg3BcM6w4',
+    }]
     bodyAttrs: {
       class: 'fade-in',
     },

@@ -55,6 +55,11 @@ definePageMeta({
   filter: grayscale();
 }
 
+.about-portrait-container:hover{
+  transition: 1s;
+  filter: none;
+}
+
 .about-timeline-container img{
   width: 100%;
   display: none;

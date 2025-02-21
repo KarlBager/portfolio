@@ -96,7 +96,6 @@ if(process.client){
   margin-bottom: 4px;
 }
 
-
 .contact-card {
   padding: 3rem;
   display: flex;

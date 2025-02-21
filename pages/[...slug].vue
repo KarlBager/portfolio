@@ -16,7 +16,6 @@
 
 <script setup>
 
-
 const { slug } = useRoute().params
 
 definePageMeta({
@@ -27,7 +26,6 @@ const story = await useAsyncStoryblok(
   slug && slug.length > 0 ? slug.join('/') : '',
   { version: 'draft' }
   )
-
 
 </script>
  
