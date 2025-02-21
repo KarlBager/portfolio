@@ -48,8 +48,9 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     <a :href="filteredProjects[0].slug">
     <div :style="{ backgroundImage: 'url(' + filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath + ')' }" class="case-card">
        
-        <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-wide-video-overlay">
-          <div class="video"><video playsinline class="video" autoplay muted loop>
+        <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
+            <div class="video-container">
+                <video playsinline autoplay muted loop>
                 <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
                 </video>
             </div>
@@ -115,7 +116,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 }
 
 
-.case-card-wide-video-overlay{
+.case-card-video-overlay{
     position: absolute;
     top:0;
     left:0;
@@ -125,8 +126,18 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     overflow: hidden;
 }
 
-.video{
-    width: 130%;
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Fullscreen */
+    overflow: hidden;
+}
+
+.video-container video {
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the div without distortion */
+    z-index: 1;
 }
 
 

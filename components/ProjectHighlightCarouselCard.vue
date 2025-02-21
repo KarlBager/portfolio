@@ -60,9 +60,8 @@ const carouselCategory = getCategory(props.categoryId, categories);
         :style="{ backgroundImage: 'url(' + filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath + ')' }"
         class="case-card case-card-wide">
 
-        <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo"
-          class="pointer-events-none case-card-wide-video-overlay">
-          <div class="video">
+        <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="pointer-events-none case-card-wide-video-overlay">
+          <div class="video-container">
             <video class="headerVideo" preload="none" playsinline autoplay muted loop>
               <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
             </video>
@@ -72,15 +71,15 @@ const carouselCategory = getCategory(props.categoryId, categories);
         <div class="case-card-wide-hover-overlay">
         </div>
 
-        <div class="flex case-card-typo-container drop-shadow-lg" :style="'text-decoration-color:' + filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor">
+        <!-- <div class="flex case-card-typo-container drop-shadow-lg" :style="'text-decoration-color:' + filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor">
           <div>
-            <!-- <h2 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
+            <h2 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
       filteredProjects[0].content.ProjectPageHeaderBlock[0].title }}</h2>
             <h4 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
       filteredProjects[0].content.ProjectPageHeaderBlock[0].subtitle }},
-              {{ filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4> -->
+              {{ filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4>
             </div>
-        </div>
+        </div> -->
 
       </div>
     </a>
@@ -125,7 +124,6 @@ const carouselCategory = getCategory(props.categoryId, categories);
   z-index: 10;
 }
 
-
 .case-card-wide-video-overlay {
   position: absolute;
   top: 0;
@@ -135,6 +133,20 @@ const carouselCategory = getCategory(props.categoryId, categories);
   border-radius: 15px;
   overflow: hidden;
 }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Fullscreen */
+    overflow: hidden;
+}
+
+.video-container video {
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the div without distortion */
+    z-index: 1;
+}
+
 
 .case-card-wide-hover-overlay:hover {
   opacity: 100;
@@ -168,7 +180,6 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
   video.headerVideo{
   display: block;
-  min-width: 100vw;
   }
 
 
