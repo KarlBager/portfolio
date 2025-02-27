@@ -48,6 +48,7 @@ filteredProjects = stories.filter(story => {
 // console.log(filteredProjects);
 
 
+
 function getCategory(categoryId, categories) {
   return categories.filter(category => category.categoryId === categoryId);
 }
@@ -55,13 +56,21 @@ carouselCategory =  getCategory(props.categoryId, categories);
 
 } else{
 
-
 // Use the filter method to filter out objects with the specified category ID
 filteredProjects = stories;
-
 carouselCategory = [{categoryName: ''}];
-
 }
+
+
+// 🔥 Shuffle `filteredProjects` based on index positions
+const customOrder = [5, 2, 8, 1, 4, 7, 3, 0, 9, 6]; // The desired index order
+
+filteredProjects = customOrder
+  .map(i => filteredProjects[i]) // Reorder based on index mapping
+  .filter(item => item !== undefined); // Remove any undefined entries
+
+console.log(filteredProjects); // 🔍 Check if it logs the correct order
+
 
 </script>
 

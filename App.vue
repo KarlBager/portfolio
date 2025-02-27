@@ -18,7 +18,6 @@ onMounted(() => {
     }, 200);  // Optional delay to prevent flickering on fast transitions
     next();
   });
-  
 });
 
 const nuxtApp = useNuxtApp();
@@ -59,7 +58,6 @@ export default {
 
 
 <template>
-
 
   <!-- <header class="standard-header">
     <div class="grid grid-cols-24">
