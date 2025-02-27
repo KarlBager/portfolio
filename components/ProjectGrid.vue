@@ -65,9 +65,11 @@ carouselCategory = [{categoryName: ''}];
 // 🔥 Shuffle `filteredProjects` based on index positions
 const customOrder = [5, 2, 8, 1, 4, 7, 3, 0, 9, 6]; // The desired index order
 
-filteredProjects = customOrder
-  .map(i => filteredProjects[i]) // Reorder based on index mapping
-  .filter(item => item !== undefined); // Remove any undefined entries
+const orderedItems = customOrder.map(i => filteredProjects[i] || null); // Keep placeholders
+const remainingItems = filteredProjects.filter(item => !orderedItems.includes(item));
+
+filteredProjects = [...orderedItems.filter(Boolean), ...remainingItems]; // Boolean filter removes nulls
+
 
 console.log(filteredProjects); // 🔍 Check if it logs the correct order
 
