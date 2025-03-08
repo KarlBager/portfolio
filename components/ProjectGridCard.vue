@@ -122,7 +122,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     left:0;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: var(--kb-corner-radius);
     overflow: hidden;
 }
 
@@ -154,7 +154,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     opacity: 0;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: var(--kb-corner-radius);
     position: relative;
     z-index: 10;
 }
@@ -180,7 +180,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 background-color: var(--kb-green-3);
 width: 100%;
 aspect-ratio: 16 / 9;
-border-radius: 15px;
+border-radius: var(--kb-corner-radius);
 background-size: cover;
 background-position: center;
 position: relative;

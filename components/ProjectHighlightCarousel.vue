@@ -47,8 +47,11 @@ const filteredProjects = stories.filter(story => {
 
                   <div class="bio-card-typo-container">
                     <NuxtLink external to="AboutView">
-                    <h1>Visuel designer med kode som materiale</h1>
-                    <h4>Hvem er jeg?  ></h4></NuxtLink>
+                    <h1>Visuel designstuderende med kode som materiale</h1>
+                    <h4>Søger praktik i perioden 20. oktober 2025 – 6. marts 2026</h4>
+                  
+                  
+                  </NuxtLink>
                   </div>
 
                   </div>
@@ -85,7 +88,7 @@ margin: 0rem 0 2rem 0;
   background-image: url('https://www.media.karlbager.dk/media/karl-portrait_ext.jpg');
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: var(--kb-corner-radius);
   background-size: cover;
   background-position: left 26% top 50%;
   position: relative;
@@ -118,7 +121,7 @@ grid-column-end: 4;
   margin-left: 2rem;
   margin-top: 1rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--kb-green-3);
 }
 
@@ -190,7 +193,7 @@ margin: 0rem 0 3rem 0;
   background-image: url('https://www.media.karlbager.dk/media/karl-portrait_ext.jpg');
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: var(--kb-corner-radius);
   background-size: cover;
   background-position: left 30% top 50%;
   position: relative;
@@ -220,7 +223,6 @@ grid-column-end: 4;
   margin-left: 6rem;
   margin-top: 2rem;
   font-size: 1rem;
-  font-weight: 600;
 }
 }
 
@@ -229,7 +231,6 @@ grid-column-end: 4;
   margin-left: 2rem;
   margin-top: 2rem;
   font-size: 1rem;
-  font-weight: 600;
 }
 
 
@@ -251,7 +252,7 @@ font-size: 3rem;
 .header-portrait-container{
   width: 15rem;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: var(--kb-corner-radius);
 }
 
 .disabled {

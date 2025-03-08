@@ -14,7 +14,7 @@ const props = defineProps({
     
 <div class="project-page-element-container">
     <div class="project-page-video-container">
-        <video controls autoplay loop>
+        <video controls :autoplay="blok.autoplay" loop>
             <source :src="blok.videoPath" type="video/mp4">
         </video>
     </div>
