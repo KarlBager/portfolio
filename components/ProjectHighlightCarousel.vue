@@ -104,7 +104,7 @@ grid-column-end: 4;
 }
 
 .bio-case-card h1{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.0;
   color: var(--kb-green-1);
 }
@@ -120,9 +120,10 @@ grid-column-end: 4;
 .bio-case-card h4{
   margin-left: 2rem;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 400;
   color: var(--kb-green-3);
+  line-height: 1.2;
 }
 
 

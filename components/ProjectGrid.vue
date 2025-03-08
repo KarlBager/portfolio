@@ -117,7 +117,7 @@ console.log(filteredProjects); // 🔍 Check if it logs the correct order
 }
 
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1270px) {
 .grid-container{
     grid-template-columns: repeat(3, 1fr);
 }

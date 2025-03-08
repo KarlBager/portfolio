@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body{
-background-image: url('https://www.media.karlbager.dk/media/background-pattern.png');
+background-image: url('https://www.media.karlbager.dk/media/background-pattern.jpg');
+background-position: center;
 }
 
 .fade-in {
