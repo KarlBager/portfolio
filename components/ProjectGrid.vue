@@ -112,7 +112,7 @@ console.log(filteredProjects); // 🔍 Check if it logs the correct order
 @media only screen and (min-width: 600px) {
   .grid-container{
   padding: 0 3rem 3rem;
-  gap: 3rem;
+  gap: 2rem;
   }
 }
 
