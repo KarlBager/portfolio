@@ -63,7 +63,7 @@ carouselCategory = [{categoryName: ''}];
 
 
 // 🔥 Shuffle `filteredProjects` based on index positions
-const customOrder = [5, 2, 8, 1, 4, 7, 3, 0, 9, 6]; // The desired index order
+const customOrder = [6, 3, 9, 2, 5, 0, 8, 4, 7, 1]; // The desired index order
 
 const orderedItems = customOrder.map(i => filteredProjects[i] || null); // Keep placeholders
 const remainingItems = filteredProjects.filter(item => !orderedItems.includes(item));
