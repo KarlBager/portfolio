@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
   image: {
+    provider: 'ipx',
     domains: ['media.karlbager.dk', 'karlbager.dk']
   },
   generate: {
