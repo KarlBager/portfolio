@@ -46,7 +46,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 <template>
 <div class="case-card case-card-container drop-shadow-lg">
     <a :href="filteredProjects[0].slug">
-    <div :style="{ backgroundImage: 'url(' + filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath + ')' }" class="case-card">
+    <div class="case-card">
        
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
             <div class="video-container">
@@ -55,6 +55,8 @@ const carouselCategory =  getCategory(props.categoryId, categories);
                 </video>
             </div>
         </div>
+
+        <NuxtImg class="grid-cell-image" :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath" />
        
         <div class="case-card-hover-overlay">
         </div>
@@ -155,7 +157,9 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     width: 100%;
     height: 100%;
     border-radius: var(--kb-corner-radius);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 
@@ -184,6 +188,10 @@ border-radius: var(--kb-corner-radius);
 background-size: cover;
 background-position: center;
 position: relative;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -191,6 +199,11 @@ position: relative;
     width: 100%;
 }
 
+.grid-cell-image{
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 
 
 @media only screen and (min-width: 600px) {
