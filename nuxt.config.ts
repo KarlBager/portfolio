@@ -2,8 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
   image: {
-    provider: 'netlify',
-    domains: ['media.karlbager.dk']
+    domains: ['media.karlbager.dk', 'karlbager.dk']
   },
   generate: {
     fallback: '404.html'
