@@ -32,6 +32,17 @@ const imageClass3 = computed(() => ({
 
 
 
+import { defineEmits } from 'vue';
+
+// Define emits to communicate with the parent
+const emit = defineEmits();
+
+// Function to send the image URL to the parent
+const sendImage = (imageUrl) => {
+  emit('imageSelected', imageUrl); // Emit the image URL when clicked
+};
+
+
 
 </script>
 
@@ -41,11 +52,11 @@ const imageClass3 = computed(() => ({
 <template>
 
     <div :style="{gridTemplateColumns: blok.Fractions}" class="project-page-twoup-container">
-        <div :id="{ imageId1 }" :class="imageClass1" :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }">
+        <div @click="sendImage(blok.Image1.filename)" :id="{ imageId1 }" :class="imageClass1" :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }">
         </div>
-        <div :id="{ imageId2 }" :class="imageClass2" :style="{ backgroundImage: 'url(' + blok.Image2.filename + ')' }">
+        <div @click="sendImage(blok.Image2.filename)" :id="{ imageId2 }" :class="imageClass2" :style="{ backgroundImage: 'url(' + blok.Image2.filename + ')' }">
         </div>
-        <div :id="{ imageId3 }" :class="imageClass3" :style="{ backgroundImage: 'url(' + blok.Image3.filename + ')' }">
+        <div @click="sendImage(blok.Image3.filename)" :id="{ imageId3 }" :class="imageClass3" :style="{ backgroundImage: 'url(' + blok.Image3.filename + ')' }">
         </div>
     </div>
 
