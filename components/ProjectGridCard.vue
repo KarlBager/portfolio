@@ -56,7 +56,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
             </div>
         </div>
 
-        <NuxtImg class="grid-cell-image" :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath" />
+        <img class="grid-cell-image" :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath" />
        
         <div class="case-card-hover-overlay">
         </div>
