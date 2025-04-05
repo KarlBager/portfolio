@@ -6,7 +6,7 @@
 			<img class="about-portrait" src="https://media.karlbager.dk/media/lille-karl.jpg" />
 
 			<h3>Karl Emil Bager Jakobsen</h3>
-			<p>– det er mig<br><br>Jeg er 23 år, bosat i København, og jeg har min passion i medieproduktion og digitalt design.<br><br>Jeg studerer i øjeblikket Visuel Kommunikation på studieretningen Coded Design ved
+			<p>– det er mig<br><br>Jeg er 23 år, bosat i København, og jeg har en passion for medieproduktion og digitalt design.<br><br>Jeg studerer i øjeblikket Visuel Kommunikation på studieretningen Coded Design ved
 				Danmarks
 				Medie- og Journalisthøjskole.<br><br>Derudover arbejder jeg freelance – primært som produktionsassistent samt som fotograf, billedbehandler og klipper krydret med lidt front-end og øvrigt grafisk design.
 				<br><br>
