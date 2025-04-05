@@ -206,6 +206,8 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     width: 100%;
     height: 100%;
     inset: 0;
+    align-items: center;
+    display: flex
 }
 
 
