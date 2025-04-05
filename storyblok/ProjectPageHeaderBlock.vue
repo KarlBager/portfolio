@@ -149,6 +149,7 @@ position: absolute;
 
 .tool{
     max-width: 2rem;
+    max-height: 2rem;
     object-fit: contain;
 }
 
