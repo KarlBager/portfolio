@@ -8,8 +8,11 @@
 			<h3>Karl Emil Bager Jakobsen</h3>
 			<p>– det er mig<br><br>Jeg er 23 år, bosat i København, og jeg har min passion i medieproduktion og digitalt design.<br><br>Jeg studerer i øjeblikket Visuel Kommunikation på studieretningen Coded Design ved
 				Danmarks
-				Medie- og Journalisthøjskole.<br><br>Derudover arbejder jeg freelance – primært som produktionsassistent samt som fotograf, billedbehandler og klipper krydret med lidt front-end og øvrigt grafisk design.</p>
-
+				Medie- og Journalisthøjskole.<br><br>Derudover arbejder jeg freelance – primært som produktionsassistent samt som fotograf, billedbehandler og klipper krydret med lidt front-end og øvrigt grafisk design.
+				<br><br>
+				Jeg drømmer om at blive en endnu dygtigere designer og lave elegante visuelle identeter blandt andet med kode som redskab.
+			</p>
+				
 		</div>
 
 		<Timeline></Timeline>
