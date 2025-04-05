@@ -5,8 +5,11 @@ import { useTools } from '@/composables/useTools.js';
 const { toolbox } = useTools();
 
 const props = defineProps({ blok: Object });
-const tools = props.blok.tools.split(', ');
+let tools = [];
 
+if(props.blok.tools){
+tools = props.blok.tools.split(', ');
+}
 
 
 // Reactive state for hover image
