@@ -60,7 +60,7 @@ const currentImage = (toolKey) => {
                     
                     <div v-for="toolKey in tools" :key="toolKey" class="tool-container" @mouseover="hoverImage(toolKey)"
                     @mouseleave="resetImage(toolKey)">
-                        <img class="tool" :src="currentImage(toolKey)" 
+                        <img loading="lazy" class="tool" :src="currentImage(toolKey)" 
                         :alt="toolbox[toolKey]?.name">
 
 

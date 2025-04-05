@@ -65,6 +65,11 @@ export function useTools(){
             src: 'https://media.karlbager.dk/tool-logos/npm-bw.png',
             hoverSrc: 'https://media.karlbager.dk/tool-logos/npm.png'
         },
+        blender: {
+            name: 'Blender',
+            src: 'https://media.karlbager.dk/tool-logos/blender-bw.png',
+            hoverSrc: 'https://media.karlbager.dk/tool-logos/blender.png'
+        }
     }
 
     return { toolbox }
