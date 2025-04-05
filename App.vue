@@ -59,19 +59,6 @@ export default {
 
 <template>
 
-  <!-- <header class="standard-header">
-    <div class="grid grid-cols-24">
-
-      <a class="logo self-center" href="/"><img class="logo self-center" src="https://www.media.karlbager.dk/media/logo.svg" /></a>
-
-      <img @click="navOverlayActive = true"
-        class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
-        src="https://www.media.karlbager.dk/media/single-arrow-forward.svg" />
-      <div class="current-view-heading-hover-box w-fit self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 @click="navOverlayActive = true" class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
-        $route.name }}</h3></div>
-    </div>
-  </header> -->
-
   <header class="standard-header">
     
    <div class="w-full flex"> 

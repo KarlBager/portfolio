@@ -137,6 +137,7 @@ declare global {
   const useStoryblok: typeof import('../../node_modules/@storyblok/vue')['useStoryblok']
   const useStoryblokApi: typeof import('../../node_modules/@storyblok/vue')['useStoryblokApi']
   const useStoryblokBridge: typeof import('../../node_modules/@storyblok/vue')['useStoryblokBridge']
+  const useTools: typeof import('../../composables/useTools')['useTools']
   const useTransitionState: typeof import('../../node_modules/vue')['useTransitionState']
   const watch: typeof import('../../node_modules/vue')['watch']
   const watchEffect: typeof import('../../node_modules/vue')['watchEffect']
@@ -295,6 +296,7 @@ declare module 'vue' {
     readonly useStoryblok: UnwrapRef<typeof import('../../node_modules/@storyblok/vue')['useStoryblok']>
     readonly useStoryblokApi: UnwrapRef<typeof import('../../node_modules/@storyblok/vue')['useStoryblokApi']>
     readonly useStoryblokBridge: UnwrapRef<typeof import('../../node_modules/@storyblok/vue')['useStoryblokBridge']>
+    readonly useTools: UnwrapRef<typeof import('../../composables/useTools')['useTools']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/vue')['useTransitionState']>
     readonly watch: UnwrapRef<typeof import('../../node_modules/vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('../../node_modules/vue')['watchEffect']>

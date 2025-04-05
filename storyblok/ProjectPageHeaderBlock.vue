@@ -1,6 +1,46 @@
+<script setup>
+
+import { useTools } from '@/composables/useTools.js';
+
+const { toolbox } = useTools();
+
+const props = defineProps({ blok: Object });
+const tools = props.blok.tools.split(', ');
+
+
+
+// Reactive state for hover image
+const hoveredTool = ref(null);
+
+
+// Function to change image on hover
+const hoverImage = (toolKey, event) => {
+    hoveredTool.value = toolKey;
+};
+
+// Function to reset image when hover ends
+const resetImage = () => {
+  hoveredTool.value = null;
+};
+
+const currentImage = (toolKey) => {
+  if (hoveredTool.value === toolKey) {
+    return toolbox[toolKey]?.hoverSrc || toolbox[toolKey]?.src; // Use hover image if hovered
+  }
+  return toolbox[toolKey]?.src; // Default image
+};
+
+
+
+
+</script>
+
+
+
+
 <template>
 
-      <div class="highlight-carousel case-card case-card-container-wide project-page-header">
+<div  class="highlight-carousel case-card case-card-container-wide project-page-header">
     <div :style="{ backgroundImage: 'url(' + blok.headerImagePath + ')' }" class="case-card case-card-wide">
         <div class="back-button drop-shadow-lg">
             <NuxtLink to="/"><div class="back-button-el">< Tilbage</div></NuxtLink>
@@ -12,20 +52,59 @@
 <div class="project-page-title-container drop-shadow-lg">
                 <h2 v-if="blok.showTitle">{{ blok.title }}</h2>
                 <h4>{{ blok.subtitle }}, {{ blok.year }}</h4>
-        </div>
+
+                <div class="toolbox-container">
+                    
+                    <div v-for="toolKey in tools" :key="toolKey" class="tool-container" @mouseover="hoverImage(toolKey)"
+                    @mouseleave="resetImage(toolKey)">
+                        <img class="tool" :src="currentImage(toolKey)" 
+                        :alt="toolbox[toolKey]?.name">
 
 
-  </template>
+                    <Transition>
+                        <div class="tool-hoverbox" v-if="hoveredTool == toolKey"><p>{{ toolbox[toolKey]?.name }}</p></div>
+                    </Transition>
+
+                    </div>
+                </div>
+
+
+              
+</div>
+
+
+</template>
   
 
-<script setup>
-defineProps({ blok: Object })
-</script>
+
 
 
 
 
 <style>
+
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+
+.tool-hoverbox{
+color: white;
+background-color: #333333;
+border-radius: var(--kb-corner-radius);
+display: flex;
+align-items: center;
+padding: 0.5rem;
+z-index: 100;
+position: absolute;
+}
 
 .back-button-el{
   display: inline-block;
@@ -58,6 +137,19 @@ defineProps({ blok: Object })
 }
 
 
+.toolbox-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tool{
+    max-width: 2rem;
+    object-fit: contain;
+}
+
+
 </style>
 
 
@@ -76,8 +168,8 @@ defineProps({ blok: Object })
 
 .project-page-title-container{
     padding: 1rem;
+    position: static;
 }
-
 
 .highlight-carousel{
     margin-bottom: 2rem;
@@ -108,7 +200,6 @@ defineProps({ blok: Object })
 .project-page-title-container{
     color: black;
     line-height: 1;
-    pointer-events: none;
     max-width: 35rem;
     margin: 0 auto;
 }
