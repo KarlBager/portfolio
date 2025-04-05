@@ -60,7 +60,6 @@ onMounted(() => {
 
 <style>
 
-
 .twoup-image{
     margin: 0.2rem;
     height: 25rem;
@@ -80,7 +79,20 @@ onMounted(() => {
 .contain-image{
 background-size: contain !important;
 background-repeat: no-repeat;
+align-content: center;
 }
+
+.contain-image img{
+  object-fit: contain;
+  max-height: 100%;
+}
+
+
+.project-page-twoup-container{
+    display: grid;
+    align-content: center;
+}
+
 
 
 </style>

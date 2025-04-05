@@ -38,11 +38,17 @@ const sendImage = (imageUrl) => {
 
 <template>
     <div :style="{gridTemplateColumns: blok.Fractions}" class="project-page-twoup-container">
-        <div @click="sendImage(blok.Image1.filename)" :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }" :class="imageClass1">
+        <div @click="sendImage(blok.Image1.filename)" :class="imageClass1">
+        
+            <img class="grid-image" loading="lazy" :src="blok.Image1.filename">
+        
         </div>
 
 
-        <div @click="sendImage(blok.Image2.filename)" :style="{ backgroundImage: 'url(' + blok.Image2.filename + ')' }" :class="imageClass2">
+        <div @click="sendImage(blok.Image2.filename)" :class="imageClass2">
+        
+            <img class="grid-image" loading="lazy" :src="blok.Image2.filename">
+
         </div>
 
     </div>

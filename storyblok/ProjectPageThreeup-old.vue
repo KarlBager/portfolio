@@ -42,6 +42,8 @@ const sendImage = (imageUrl) => {
   emit('imageSelected', imageUrl); // Emit the image URL when clicked
 };
 
+
+
 </script>
 
 
@@ -50,16 +52,11 @@ const sendImage = (imageUrl) => {
 <template>
 
     <div :style="{gridTemplateColumns: blok.Fractions}" class="project-page-twoup-container">
-        <div @click="sendImage(blok.Image1.filename)" :id="{ imageId1 }" :class="imageClass1">
-            <img class="grid-image" loading="lazy" :src="blok.Image1.filename">
+        <div @click="sendImage(blok.Image1.filename)" :id="{ imageId1 }" :class="imageClass1" :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }">
         </div>
-
-        <div @click="sendImage(blok.Image2.filename)" :id="{ imageId2 }" :class="imageClass2">
-            <img class="grid-image" loading="lazy" :src="blok.Image2.filename">
+        <div @click="sendImage(blok.Image2.filename)" :id="{ imageId2 }" :class="imageClass2" :style="{ backgroundImage: 'url(' + blok.Image2.filename + ')' }">
         </div>
-
-        <div @click="sendImage(blok.Image3.filename)" :id="{ imageId3 }" :class="imageClass3">
-            <img class="grid-image" loading="lazy" :src="blok.Image3.filename">
+        <div @click="sendImage(blok.Image3.filename)" :id="{ imageId3 }" :class="imageClass3" :style="{ backgroundImage: 'url(' + blok.Image3.filename + ')' }">
         </div>
     </div>
 
@@ -73,5 +70,6 @@ const sendImage = (imageUrl) => {
 .project-page-twoup-container{
     display: grid;
 }
+
 
 </style>
