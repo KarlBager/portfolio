@@ -69,6 +69,16 @@ export function useTools(){
             name: 'Blender',
             src: 'https://media.karlbager.dk/tool-logos/blender-bw.png',
             hoverSrc: 'https://media.karlbager.dk/tool-logos/blender.png'
+        },
+        sql: {
+            name: 'SQL',
+            src: 'https://media.karlbager.dk/tool-logos/sql-bw.png',
+            hoverSrc: 'https://media.karlbager.dk/tool-logos/sql.png'
+        },
+        php: {
+            name: 'PHP',
+            src: 'https://media.karlbager.dk/tool-logos/php-bw.png',
+            hoverSrc: 'https://media.karlbager.dk/tool-logos/php.png'
         }
     }
 
