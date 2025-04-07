@@ -1,13 +1,16 @@
 
 <template>
 
-  <StoryblokComponent v-if="story" :blok="story.content" />
+<div class="case-content-outer-container">
+  <div class="case-content-container">
+    <StoryblokComponent v-if="story" :blok="story.content" />
 
-  
-        <div class="backbutton-bottom drop-shadow-lg">
-          <NuxtLink to="/"><div class="back-button-el">< Tilbage</div></NuxtLink>
-        </div>    
-
+    
+          <div class="backbutton-bottom drop-shadow-lg">
+            <NuxtLink to="/"><div class="back-button-el">< Tilbage</div></NuxtLink>
+          </div>    
+  </div>
+</div>
 
 
 </template>
@@ -34,9 +37,20 @@ const story = await useAsyncStoryblok(
 
 <style scoped>
 
+.case-content-container{
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #e4e3e3;
+}
+
+.case-content-outer-container{
+  padding: 1rem;
+}
+
 .backbutton-bottom{
   margin-top: 2rem;
-  padding: 0rem 5rem 3rem 3rem;
+  padding: 0rem 5rem 1rem 1rem;
 
 }
 

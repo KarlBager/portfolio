@@ -20,7 +20,6 @@ const destroyFlickity = () => {
   oldScript.remove();
 };
 
-
 const reloadFlickity = () => {
   const oldScript = document.querySelector('#flickity-script');
   oldScript.remove();

@@ -212,7 +212,7 @@ position: absolute;
 .back-button{
     position:absolute;
     top: 1rem;
-    left: 3rem;
+    left: 1rem;
     color: var(--kb-gray-3)
 }
 
@@ -224,7 +224,7 @@ position: absolute;
     }
 
     .case-card-container-wide {
-    width: 100vw;
+    width: 100%;
     aspect-ratio: 16 / 6;
     }
 

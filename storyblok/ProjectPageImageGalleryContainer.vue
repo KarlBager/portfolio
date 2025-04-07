@@ -61,7 +61,6 @@ onMounted(() => {
 <style>
 
 .twoup-image{
-    margin: 0.2rem;
     height: 25rem;
     background-size: cover;
     background-position: center;
