@@ -300,26 +300,6 @@ footer{
 }
 
 
-
-/* 
-.route-enter-from{
-  opacity: 0;
-}
-.route-enter-to{
-  opacity: 100;
-}
-.route-enter-active{
-  transition: all 2s ease-out;
-}
-
-.route-leave-from{}
-.route-leave-to{
-  opacity: 0;
-}
-.route-leave-active{
-  transition: all 2s ease-in;
-} */
-
 @media only screen and (max-width: 600px) {
 
 .standard-header{
@@ -329,6 +309,7 @@ footer{
 .navbar-item{
 padding: 0 0.4rem;
 }
+
 }
 
 </style>
