@@ -39,7 +39,7 @@ const story = await useAsyncStoryblok(
 
 .case-content-container{
   width: 100%;
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
   background-color: #e4e3e3;
 }
@@ -56,7 +56,7 @@ const story = await useAsyncStoryblok(
 
 @media only screen and (max-width: 600px){
   .backbutton-bottom{
-  padding: 0rem var(--mobile-horizontal-padding);
+  padding: 0rem var(--mobile-horizontal-padding) 1rem 1rem;
   }
 }
 

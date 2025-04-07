@@ -181,7 +181,7 @@ position: absolute;
 
 .project-page-header{
     padding: 0;
-    max-width: 100wv;
+    width: 100%;
 }
 
 .project-page-header .case-card-wide{
@@ -204,9 +204,10 @@ position: absolute;
 .project-page-title-container{
     color: black;
     line-height: 1;
-    max-width: 35rem;
-    margin: 0 auto;
+    margin: 0 1rem;
 }
+
+
 
 
 .back-button{
@@ -228,6 +229,15 @@ position: absolute;
     aspect-ratio: 16 / 6;
     }
 
+
+
+    .project-page-title-container{
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+
+
 }
 
 @media only screen and (min-width: 1080px) {
@@ -235,8 +245,6 @@ position: absolute;
   aspect-ratio: 16 / 4;
   }
 }
-
-
 
 
 
