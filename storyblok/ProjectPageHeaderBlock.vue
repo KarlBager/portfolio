@@ -53,7 +53,7 @@ const currentImage = (toolKey) => {
 
 
 <div class="project-page-title-container drop-shadow-lg">
-                <h2 v-if="blok.showTitle">{{ blok.title }}</h2>
+                <h2>{{ blok.title }}</h2>
                 <h4>{{ blok.subtitle }}, {{ blok.year }}</h4>
 
                 <div class="toolbox-container">
@@ -171,7 +171,7 @@ position: absolute;
 }
 
 .project-page-title-container{
-    padding: 1rem;
+    padding: 1rem 0;
     position: static;
 }
 
@@ -228,8 +228,6 @@ position: absolute;
     width: 100%;
     aspect-ratio: 16 / 6;
     }
-
-
 
     .project-page-title-container{
     max-width: 35rem;

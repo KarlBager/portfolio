@@ -13,7 +13,8 @@ const props = defineProps({
 <template>
 
 
-        <div :style="{ backgroundImage: 'url(' + blok.Image1.filename + ')' }" class="twoup-image">
+        <div @click="sendImage(blok.Image3.filename)" class="twoup-image">
+            <img class="grid-image" loading="lazy" :src="blok.Image1.filename">
         </div>
         <VueEasyLightbox
       :visible="visibleRef"
@@ -33,5 +34,4 @@ const props = defineProps({
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 </style>

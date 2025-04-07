@@ -62,5 +62,14 @@ const sendImage = (imageUrl) => {
     display: grid;
 }
 
+@media only screen and (max-width: 600px){
+
+.project-page-twoup-container{
+    display: grid;
+    grid-template-columns: 1fr !important;
+}
+
+}
+
 
 </style>

@@ -58,7 +58,7 @@ const sendImage = (imageUrl) => {
             <img class="grid-image" loading="lazy" :src="blok.Image2.filename">
         </div>
 
-        <div @click="sendImage(blok.Image3.filename)" :id="{ imageId3 }" :class="imageClass3">
+        <div @click="sendImage(blok.Image3.filename)" :id="{ imageId3 }" class="grid-image3" :class="imageClass3">
             <img class="grid-image" loading="lazy" :src="blok.Image3.filename">
         </div>
     </div>
@@ -72,6 +72,21 @@ const sendImage = (imageUrl) => {
 
 .project-page-twoup-container{
     display: grid;
+    justify-items: center;
+}
+
+
+@media only screen and (max-width: 600px){
+
+.project-page-twoup-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.grid-image3{
+    grid-column: 1 / span 2;
+}
+
 }
 
 </style>

@@ -62,13 +62,18 @@ onMounted(() => {
 
 .twoup-image{
     background-size: cover;
+    object-fit: cover;
     background-position: center;
+}
+
+.twoup-image img{
+    min-height: 100%;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 600px){
   .twoup-image{
     margin: 0.2rem;
-    height: 12rem;
     background-size: cover;
     background-position: center;
 }
