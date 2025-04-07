@@ -48,7 +48,6 @@ const props = defineProps({
 
 @media only screen and (max-width: 600px){
     .project-page-paragraph-container{
-    
     margin: 0 1rem;
 }
 }

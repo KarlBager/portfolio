@@ -205,9 +205,9 @@ position: absolute;
     color: black;
     line-height: 1;
     margin: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
-
 
 
 .back-button{
