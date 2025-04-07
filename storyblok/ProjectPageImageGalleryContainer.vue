@@ -83,6 +83,7 @@ onMounted(() => {
 background-size: contain !important;
 background-repeat: no-repeat;
 align-content: center;
+justify-items: center;
 }
 
 .contain-image img{
