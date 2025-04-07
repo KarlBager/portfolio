@@ -83,14 +83,11 @@ margin: 0rem 0 2rem 0;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  /* justify-content: center;
-  align-items: center; */
   background-image: url('https://www.media.karlbager.dk/media/karl-portrait_ext.jpg');
   width: 100%;
   height: 100%;
-  border-radius: var(--kb-corner-radius);
   background-size: cover;
-  background-position: left 26% top 50%;
+  background-position: left 26% top 0%;
   position: relative;
 }
 

@@ -103,7 +103,7 @@ console.log(filteredProjects); // 🔍 Check if it logs the correct order
 <style>
 
 .grid-container{
-  padding: 0 0.5rem;
+  padding: 0 var(--mobile-side-padding);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
