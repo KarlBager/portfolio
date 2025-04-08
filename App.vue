@@ -15,14 +15,16 @@ onMounted(() => {
 
   siteContentEl = document.querySelector('.site-content');
 
-  // Show loading cursor when navigation starts
-  router.beforeEach((to, from, next) => {
-    loadingTimeout = setTimeout(() => {
-      siteContentEl.classList.add('cursor-loading');
-      siteContentEl.classList.remove('loaded');
-    }, 200);  // Optional delay to prevent flickering on fast transitions
-    next();
-  });
+  // // Show loading cursor when navigation starts
+  // router.beforeEach((to, from, next) => {
+  //   loadingTimeout = setTimeout(() => {
+  //     siteContentEl.classList.add('cursor-loading');
+  //     siteContentEl.classList.remove('loaded');
+  //   }, 200);  // Optional delay to prevent flickering on fast transitions
+  //   next();
+  // });
+
+
 });
 
 const nuxtApp = useNuxtApp();

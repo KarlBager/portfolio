@@ -1,31 +1,63 @@
 <script setup>
+
 import projects from '@/projects.json'
 import categories from '@/categories.json'
 
-const props = defineProps({projectId: Number, filteredProjects: Array})
+const props = defineProps({projectId: String})
 
-const filteredProjects = props.filteredProjects;
-const projectId = props.projectId;
+let stories = useState(() => ({})); // Initialize state to store all stories
+const storyblokApi = useStoryblokApi(); // Get the Storyblok API instance
 
-const project = filteredProjects[projectId];
+  try {
+    const { data } = await storyblokApi.get('cdn/stories', {
+      version: 'draft',
+      per_page: 100 // Set to a value that fits your needs, maximum is 100
+    });
+
+stories = data.stories;
+
+
+  } catch (error) {
+    console.error('Error fetching stories:', error);
+  }
+
+// Define the category ID you want to filter by
+const projectIdToFilter = props.projectId;
+
+// Use the filter method to filter out objects with the specified category ID
+const filteredProjects = stories.filter(story => {
+  // Assuming 'category_id' is the key in each story object containing the category ID
+  return story.content.id == projectIdToFilter;
+});
+
+// Now 'filteredStories' contains only the stories with the specified category ID
+// console.log(filteredProjects);
+
+
+function getCategory(categoryId, categories) {
+  return categories.filter(category => category.categoryId === categoryId);
+}
+
+
+const carouselCategory =  getCategory(props.categoryId, categories);
 
 </script>
 
 <template>
 <div class="case-card case-card-container drop-shadow-lg">
-    <NuxtLink :href="project.slug">
+    <NuxtLink :href="filteredProjects[0].slug">
     <div class="case-card">
        
-        <div v-if="project.content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
+        <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
             <div class="video-container">
                 <video loading="lazy" preload="none" playsinline autoplay muted loop>
-                    <source :src="project.content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
+                <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
                 </video>
             </div>
         </div>
 
         <div class="image-wrapper">
-            <img loading="lazy" class="grid-cell-image" :src="project.content.ProjectPageHeaderBlock[0].headerImagePath" />
+            <img loading="lazy" class="grid-cell-image" :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerImagePath" />
         </div>
 
         <div class="case-card-hover-overlay">
@@ -39,8 +71,8 @@ const project = filteredProjects[projectId];
 
 
 <div class="case-card-label-container text-center">
-    <h2>{{ project.content.ProjectPageHeaderBlock[0].title }}</h2>
-    <h4>{{ project.content.ProjectPageHeaderBlock[0].subtitle }}, {{project.content.ProjectPageHeaderBlock[0].year}}</h4>
+    <h2>{{ filteredProjects[0].content.ProjectPageHeaderBlock[0].title }}</h2>
+    <h4>{{ filteredProjects[0].content.ProjectPageHeaderBlock[0].subtitle }}, {{filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4>
 </div>
 
 </template>

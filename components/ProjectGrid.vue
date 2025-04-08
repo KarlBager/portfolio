@@ -70,22 +70,18 @@ const remainingItems = filteredProjects.filter(item => !orderedItems.includes(it
 
 filteredProjects = [...orderedItems.filter(Boolean), ...remainingItems]; // Boolean filter removes nulls
 
-
-console.log(filteredProjects); // 🔍 Check if it logs the correct order
-
+const filteredProjectsRef = ref(filteredProjects);
 
 </script>
 
 
 
 
-
 <template>
 <div class="grid-container">
-<!-- <h4 class="carousel-category-title">{{ carouselCategory[0].categoryName }}</h4> -->
 
-      <div class="grid-cell" v-for="(item, index) in filteredProjects" :key="index">
-        <ProjectGridCard :projectId="filteredProjects[index].content.id" />
+      <div class="grid-cell" v-for="(item, index) in filteredProjectsRef" :key="index">
+        <ProjectGridCard :projectId="index" :filteredProjects="filteredProjectsRef" />
       </div>
 
 </div>
