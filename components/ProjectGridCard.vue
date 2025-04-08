@@ -45,7 +45,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 
 <template>
 <div class="case-card case-card-container drop-shadow-lg">
-    <a :href="filteredProjects[0].slug">
+    <NuxtLink :href="filteredProjects[0].slug">
     <div class="case-card">
        
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
@@ -63,8 +63,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
         <div class="case-card-hover-overlay">
         </div>
     </div>
-
-</a>
+    </NuxtLink>
 
 
 
