@@ -1,6 +1,4 @@
 <script setup>
-import NavOverlay from './components/NavOverlay.vue'
-
 import { useNuxtApp } from '#app';
 import { useRouter } from 'vue-router';
 import { onMounted, onUnmounted } from 'vue';
@@ -39,24 +37,6 @@ onUnmounted(() => {
 </script>
 
 
-<script>
-
-export default {
-  components: {
-    NavOverlay
-  },
-  data() {
-    return {
-      navOverlayActive: false,
-      showBox: false,
-    }
-  }
-}
-
-
-</script>
-
-
 <template>
 
   <header class="standard-header">
@@ -80,31 +60,16 @@ export default {
   <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
     <div class="grid relative grid-cols-24">
       <a class="logo max-w-[100%] max-h-9 col-span-2 self-center" href="/"><img class="logo max-w-[100%] max-h-9 col-span-2 self-center" src="https://www.media.karlbager.dk/media/logo-w.svg" /></a>
-        <img @click="navOverlayActive = true"
+        <img
         class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
         src="https://www.media.karlbager.dk/media/single-arrow-forward.svg" />
-        <div class="current-view-heading-hover-box w-fit col-start-6 self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 @click="navOverlayActive = true" class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
+        <div class="current-view-heading-hover-box w-fit col-start-6 self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
         $route.name }}</h3></div>
     </div>
   </header>
 
   
   <NuxtPage />
-
-
-
-<div class="pointer-events-none h-screen w-screen fixed top-0 left-0">
-  <Transition name="fade">
-    <div v-if="navOverlayActive" @click="navOverlayActive = false" class="pointer-events-auto nav-overlay-darken w-screen h-screen fixed top-0 left-0 bg-black opacity-20">
-     </div>
-  </Transition>
-
-  
-
-  <Transition name="nav-slide">
-    <NavOverlay v-if="navOverlayActive" @close-nav="navOverlayActive = false" />
-  </Transition>
-</div>
   
 
 
