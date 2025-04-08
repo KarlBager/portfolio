@@ -66,7 +66,7 @@ function switchImage(){
 
 .loading-graphic{
     width: 20rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     margin-left: 1rem;
 }
 
