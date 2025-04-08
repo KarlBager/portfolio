@@ -46,7 +46,6 @@ onMounted(() => {
 
 const story = await useAsyncStoryblok('home', { version: 'draft' })
 
-
 definePageMeta({
   name: 'Projekter'
 })

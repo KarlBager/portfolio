@@ -50,7 +50,7 @@ const carouselCategory =  getCategory(props.categoryId, categories);
        
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="case-card-video-overlay">
             <div class="video-container">
-                <video playsinline autoplay muted loop>
+                <video loading="lazy" preload="none" playsinline autoplay muted loop>
                 <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
                 </video>
             </div>

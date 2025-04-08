@@ -62,7 +62,7 @@ const carouselCategory = getCategory(props.categoryId, categories);
 
         <div v-if="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideo" class="pointer-events-none case-card-wide-video-overlay">
           <div class="video-container">
-            <video class="headerVideo" preload="none" playsinline autoplay muted loop>
+            <video class="headerVideo" preload="none" loading="lazy" playsinline autoplay muted loop>
               <source :src="filteredProjects[0].content.ProjectPageHeaderBlock[0].headerVideoPath" type="video/mp4">
             </video>
           </div>
@@ -71,15 +71,6 @@ const carouselCategory = getCategory(props.categoryId, categories);
         <div class="case-card-wide-hover-overlay">
         </div>
 
-        <!-- <div class="flex case-card-typo-container drop-shadow-lg" :style="'text-decoration-color:' + filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor">
-          <div>
-            <h2 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
-      filteredProjects[0].content.ProjectPageHeaderBlock[0].title }}</h2>
-            <h4 :style="{ color: filteredProjects[0].content.ProjectPageHeaderBlock[0].titleColor }">{{
-      filteredProjects[0].content.ProjectPageHeaderBlock[0].subtitle }},
-              {{ filteredProjects[0].content.ProjectPageHeaderBlock[0].year}}</h4>
-            </div>
-        </div> -->
 
       </div>
     </a>

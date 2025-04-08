@@ -7,7 +7,7 @@ const router = useRouter();
 let loadingTimeout;
 let cursorTimeout;
 
-const loading = ref(true);
+const loading = ref(false);
 
 let siteContentEl;
 
