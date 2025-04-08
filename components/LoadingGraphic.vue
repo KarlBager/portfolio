@@ -53,7 +53,7 @@ function switchImage(){
 <style>
 
 .loading-graphic-container{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -66,6 +66,8 @@ function switchImage(){
 
 .loading-graphic{
     width: 20rem;
+    margin-bottom: 6rem;
+    margin-left: 1rem;
 }
 
 

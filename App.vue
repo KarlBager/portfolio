@@ -31,8 +31,8 @@ nuxtApp.hook('page:finish', () => {
     clearTimeout(loadingTimeout);  // Ensure no duplicate timeouts are active
     cursorTimeout = setTimeout(() => {
       siteContentEl.classList.remove('cursor-loading');
-      siteContentEl.classList.add('loaded');
-      loading.value = false;
+      //siteContentEl.classList.add('loaded');
+      //loading.value = false;
     }, 500);
 });
 
