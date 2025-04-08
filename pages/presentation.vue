@@ -3,10 +3,6 @@ import ProjectHighlightCarousel from '../components/ProjectHighlightCarousel.vue
 import ProjectCarousel from '../components/ProjectCarousel.vue'
 
 
-if(process.client){
-// document.body.classList.add('loaded');
-}
-
 </script>
 
 <template>
