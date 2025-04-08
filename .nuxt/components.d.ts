@@ -1,6 +1,7 @@
 
 interface _GlobalComponents {
-      'ProjectCarousel': typeof import("../components/ProjectCarousel.vue")['default']
+      'LoadingGraphic': typeof import("../components/LoadingGraphic.vue")['default']
+    'ProjectCarousel': typeof import("../components/ProjectCarousel.vue")['default']
     'ProjectCarouselCard': typeof import("../components/ProjectCarouselCard.vue")['default']
     'ProjectGrid': typeof import("../components/ProjectGrid.vue")['default']
     'ProjectGridCard': typeof import("../components/ProjectGridCard.vue")['default']
@@ -44,7 +45,8 @@ interface _GlobalComponents {
     'Head': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
-      'LazyProjectCarousel': typeof import("../components/ProjectCarousel.vue")['default']
+      'LazyLoadingGraphic': typeof import("../components/LoadingGraphic.vue")['default']
+    'LazyProjectCarousel': typeof import("../components/ProjectCarousel.vue")['default']
     'LazyProjectCarouselCard': typeof import("../components/ProjectCarouselCard.vue")['default']
     'LazyProjectGrid': typeof import("../components/ProjectGrid.vue")['default']
     'LazyProjectGridCard': typeof import("../components/ProjectGridCard.vue")['default']
@@ -102,6 +104,7 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const LoadingGraphic: typeof import("../components/LoadingGraphic.vue")['default']
 export const ProjectCarousel: typeof import("../components/ProjectCarousel.vue")['default']
 export const ProjectCarouselCard: typeof import("../components/ProjectCarouselCard.vue")['default']
 export const ProjectGrid: typeof import("../components/ProjectGrid.vue")['default']
@@ -146,6 +149,7 @@ export const Style: typeof import("../node_modules/nuxt/dist/head/runtime/compon
 export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+export const LazyLoadingGraphic: typeof import("../components/LoadingGraphic.vue")['default']
 export const LazyProjectCarousel: typeof import("../components/ProjectCarousel.vue")['default']
 export const LazyProjectCarouselCard: typeof import("../components/ProjectCarouselCard.vue")['default']
 export const LazyProjectGrid: typeof import("../components/ProjectGrid.vue")['default']

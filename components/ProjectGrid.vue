@@ -102,6 +102,12 @@ console.log(filteredProjects); // 🔍 Check if it logs the correct order
 
 <style>
 
+.grid-cell{
+    white-space: nowrap;       /* Don't allow line breaks */
+    overflow: hidden;          /* Hide anything that overflows */
+    text-overflow: ellipsis;   /* Show "..." when it overflows */
+}
+
 .grid-container{
   padding: 0 var(--mobile-side-padding);
   display: grid;

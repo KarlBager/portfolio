@@ -93,11 +93,17 @@ const carouselCategory =  getCategory(props.categoryId, categories);
 .case-card-label-container h2{
     font-weight:600;
     font-size: 1.0rem;
+    white-space: nowrap;       /* Don't allow line breaks */
+    overflow: hidden;          /* Hide anything that overflows */
+    text-overflow: ellipsis;   /* Show "..." when it overflows */
 }
 
 
 .case-card-label-container h4{
     font-size: 0.6rem;
+    white-space: nowrap;       /* Don't allow line breaks */
+    overflow: hidden;          /* Hide anything that overflows */
+    text-overflow: ellipsis;   /* Show "..." when it overflows */
 }
 
 
@@ -218,9 +224,5 @@ const carouselCategory =  getCategory(props.categoryId, categories);
     display: block;
 }
 
-
-@media only screen and (min-width: 600px) {
-
-}
 
 </style>

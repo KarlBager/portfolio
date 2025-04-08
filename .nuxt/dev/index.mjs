@@ -1145,7 +1145,7 @@ function createServerHead(options = {}) {
 
 const unheadPlugins = [];
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"google-site-verification","content":"EJqIOGhmaUOcCTX8CR2l_HbAc-n74lEg9kmg3BcM6w4"}],"link":[{"rel":"stylesheet","href":"https://use.typekit.net/byd1adg.css"},{"rel":"icon","href":"https://www.media.karlbager.dk/media/favicon.png"}],"style":[],"script":[],"noscript":[],"title":"Karl Bager Portfolio","bodyAttrs":{"class":"fade-in"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"google-site-verification","content":"EJqIOGhmaUOcCTX8CR2l_HbAc-n74lEg9kmg3BcM6w4"}],"link":[{"rel":"stylesheet","href":"https://use.typekit.net/byd1adg.css"},{"rel":"icon","href":"https://www.media.karlbager.dk/media/favicon.png"}],"style":[],"script":[],"noscript":[],"title":"Karl Bager Portfolio"};
 
 const appRootId = "__nuxt";
 

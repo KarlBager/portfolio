@@ -7,12 +7,19 @@ const router = useRouter();
 let loadingTimeout;
 let cursorTimeout;
 
+const loading = ref(true);
+
+let siteContentEl;
+
 onMounted(() => {
+
+  siteContentEl = document.querySelector('.site-content');
+
   // Show loading cursor when navigation starts
   router.beforeEach((to, from, next) => {
     loadingTimeout = setTimeout(() => {
-      document.body.classList.add('cursor-loading');
-      document.body.classList.remove('loaded');
+      siteContentEl.classList.add('cursor-loading');
+      siteContentEl.classList.remove('loaded');
     }, 200);  // Optional delay to prevent flickering on fast transitions
     next();
   });
@@ -23,8 +30,9 @@ const nuxtApp = useNuxtApp();
 nuxtApp.hook('page:finish', () => {
     clearTimeout(loadingTimeout);  // Ensure no duplicate timeouts are active
     cursorTimeout = setTimeout(() => {
-      document.body.classList.remove('cursor-loading');
-      document.body.classList.add('loaded');
+      siteContentEl.classList.remove('cursor-loading');
+      siteContentEl.classList.add('loaded');
+      loading.value = false;
     }, 500);
 });
 
@@ -39,56 +47,61 @@ onUnmounted(() => {
 
 <template>
 
-  <header class="standard-header">
-    
-   <div class="w-full flex"> 
-    <div class="nav-container">
-    <NuxtLink to="/"><img class="logo-new" src="https://www.media.karlbager.dk/media/logo.svg"/></NuxtLink>
-    <div class="navbar navbar-container">
-      <NuxtLink active-class="navbar-item-active" to="/"><div class="navbar navbar-item">Projekter</div></NuxtLink>
-      <NuxtLink active-class="navbar-item-active" to="/AboutView"><div class="navbar navbar-item">Om</div></NuxtLink>
-      <NuxtLink active-class="navbar-item-active" to="/KontaktView"><div class="navbar navbar-item">Kontakt</div></NuxtLink>
-      <!-- <a href="https://www.linkedin.com/in/karl-emil-bager-jakobsen-87485a1a1/"><div class="navbar navbar-itemnavbar-some-item"><div class="social-list-item linkedin-nav-link invert"></div></div></a>
-      <a href="https://www.instagram.com/karlbager"><div class="navbar navbar-item navbar-some-item"><div class="social-list-item instagram-nav-link invert"></div></div></a> -->
+
+<div class="site-content fade-in">
+    <header class="standard-header">
+      
+    <div class="w-full flex"> 
+      <div class="nav-container">
+      <NuxtLink to="/"><img class="logo-new" src="https://www.media.karlbager.dk/media/logo.svg"/></NuxtLink>
+      <div class="navbar navbar-container">
+        <NuxtLink active-class="navbar-item-active" to="/"><div class="navbar navbar-item">Projekter</div></NuxtLink>
+        <NuxtLink active-class="navbar-item-active" to="/AboutView"><div class="navbar navbar-item">Om</div></NuxtLink>
+        <NuxtLink active-class="navbar-item-active" to="/KontaktView"><div class="navbar navbar-item">Kontakt</div></NuxtLink>
+      </div>
     </div>
-  </div>
-  </div>
-    
-  </header>
-  
-
-  <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
-    <div class="grid relative grid-cols-24">
-      <a class="logo max-w-[100%] max-h-9 col-span-2 self-center" href="/"><img class="logo max-w-[100%] max-h-9 col-span-2 self-center" src="https://www.media.karlbager.dk/media/logo-w.svg" /></a>
-        <img
-        class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
-        src="https://www.media.karlbager.dk/media/single-arrow-forward.svg" />
-        <div class="current-view-heading-hover-box w-fit col-start-6 self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
-        $route.name }}</h3></div>
     </div>
-  </header>
+      
+    </header>
+    
 
-  
-  <NuxtPage />
-  
+    <header class="darkmode-header pointer-events-none header-darkmode-overlay absolute opacity-0 top-0 left-0">
+      <div class="grid relative grid-cols-24">
+        <a class="logo max-w-[100%] max-h-9 col-span-2 self-center" href="/"><img class="logo max-w-[100%] max-h-9 col-span-2 self-center" src="https://www.media.karlbager.dk/media/logo-w.svg" /></a>
+          <img
+          class="header-arrow float-left max-h-4 h-[100%] justify-self-center self-center"
+          src="https://www.media.karlbager.dk/media/single-arrow-forward.svg" />
+          <div class="current-view-heading-hover-box w-fit col-start-6 self-center bg-[var(--kb-gray-3)] rounded-lg p-2"><h3 class="leading-[0.8] current-view-heading col-span-2 col-start-8 self-center">{{
+          $route.name }}</h3></div>
+      </div>
+    </header>
 
-
-
-
-<footer class="py-12 px-12">
-
-
-<p class="footer-info">
-<strong>Karl Bager Media</strong><br>
-CVR: 42 54 28 30<br>
-<br>
-Pladehals Allé 25, 1. tv<br>
-2450 København SV<br>
-</p>
+    
+    <NuxtPage />
 
 
 
-</footer>
+
+  <footer class="py-12 px-12">
+
+
+  <p class="footer-info">
+  <strong>Karl Bager Media</strong><br>
+  CVR: 42 54 28 30<br>
+  <br>
+  Pladehals Allé 25, 1. tv<br>
+  2450 København SV<br>
+  </p>
+
+
+
+  </footer>
+</div>
+
+
+<Transition>
+    <LoadingGraphic v-if="loading"></LoadingGraphic>
+</Transition>
 
 </template>
 
