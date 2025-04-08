@@ -93,7 +93,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/b86ba265-3e3e-478b-a30e-530aa41e6841.json"
       ],
       "#build": [
         "."

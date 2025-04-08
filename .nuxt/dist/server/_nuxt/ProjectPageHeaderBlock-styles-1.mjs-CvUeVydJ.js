@@ -1,0 +1,5 @@
+const ProjectPageHeaderBlock_vue_vue_type_style_index_0_lang = ".v-enter-active,.v-leave-active{transition:opacity .5s ease}.v-enter-from,.v-leave-to{opacity:0}.tool-hoverbox{align-items:center;background-color:#333;border-radius:var(--kb-corner-radius);color:#fff;display:flex;padding:.5rem;position:absolute;z-index:100}.back-button-el{align-content:center;background:linear-gradient(145deg,#e6e6e6,#fff);border-radius:8px;box-shadow:0 2px 10px #0000000a;color:#000;display:inline-block;font-weight:400;height:2rem;margin-right:.25rem;padding:0 1rem;text-align:center;transition:all .2s}.project-page-element-container{margin:3rem auto;max-width:75rem;padding:0 1rem}@media only screen and (min-width:600px){.project-page-element-container{padding:0}}.toolbox-container{align-items:center;display:flex;gap:.5rem;margin-top:1rem}.tool{max-height:2rem;max-width:2rem;-o-object-fit:contain;object-fit:contain}";
+export {
+  ProjectPageHeaderBlock_vue_vue_type_style_index_0_lang as default
+};
+//# sourceMappingURL=ProjectPageHeaderBlock-styles-1.mjs-CvUeVydJ.js.map
