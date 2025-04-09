@@ -75,8 +75,10 @@ const project = filteredProjects[projectId];
 
 
 @media only screen and (min-width: 600px) {
+
+
 .case-card-label-container h2{
-    font-weight:600;
+    font-weight: 600;
     font-size: 1.1rem;
 }
 
