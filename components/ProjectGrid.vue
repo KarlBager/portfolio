@@ -99,7 +99,6 @@ const filteredProjectsRef = ref(filteredProjects);
 <style>
 
 .grid-cell{
-  overflow: hidden;
     white-space: nowrap;       /* Don't allow line breaks */
     text-overflow: ellipsis;   /* Show "..." when it overflows */
 }
