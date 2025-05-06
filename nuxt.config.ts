@@ -29,7 +29,12 @@ export default defineNuxtConfig({
     meta: [{
       name: 'google-site-verification',
       content: 'EJqIOGhmaUOcCTX8CR2l_HbAc-n74lEg9kmg3BcM6w4'
-    }],
+    }, 
+    {
+      name: 'google-adsense-account',
+      content: 'ca-pub-6165622967405383'
+    }  
+  ],
     link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/byd1adg.css' }, { rel: 'icon', href: 'https://www.media.karlbager.dk/media/favicon.png' }]
   }
 },
