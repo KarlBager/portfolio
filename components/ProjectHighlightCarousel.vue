@@ -48,7 +48,7 @@ const filteredProjects = stories.filter(story => {
                   <div class="bio-card-typo-container">
                     <NuxtLink external to="AboutView">
                     <h1>Visuel designstuderende med kode som materiale</h1>
-                    <h4>Søger praktik i perioden 20. oktober 2025 – 6. marts 2026</h4>
+                    <h4></h4>
                   
                   
                   </NuxtLink>
