@@ -39,7 +39,7 @@ const filteredProjects = stories.filter(story => {
 <div>
 
     <div class="carousel highlight-carousel drop-shadow-lg" data-flickity='{"autoPlay": 5000, "wrapAround": true, "arrowShape": "m72.58,60.84l18.84,6.41v20.25S0,52.9,0,52.9v-17.65S91.42.85,91.42.85v20.25s-18.84,6.35-18.84,6.35l-15.26,5.14-34.22,11.49,34.22,11.62,15.26,5.14Z"}'>
-        
+      <!--
       <div class="carousel-cell">
           <div class="case-card case-card-container-wide">
                 
@@ -58,7 +58,7 @@ const filteredProjects = stories.filter(story => {
                 
               </div>
       </div>
-      
+      -->
       
       
       <div class="carousel-cell" v-for="(item, index) in filteredProjects" :key="index">
